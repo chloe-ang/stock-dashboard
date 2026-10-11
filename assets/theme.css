@@ -53,10 +53,10 @@ nav.sec a{border-radius:999px!important}
 .home a.card.t-bull .rk{background:color-mix(in srgb,var(--up) 14%,transparent)}
 .home a.card.t-cau .rk{background:color-mix(in srgb,var(--down) 12%,transparent)}
 .home .go{font-weight:600}
-.cat{margin-top:36px;border-top:none!important;padding:0}
-.cat:first-of-type{margin-top:20px}
-.cat-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-.cat-h h3{font-size:22px;margin:0}
-.cat-h .cat-n{font:500 12px var(--f-mono);color:var(--muted)}
-.cat-h .cat-d{color:var(--muted);font-size:13.5px;flex-basis:100%}
+/* sector bubble, styled like the ticker bubble, one colour per sector */
+.home .sec{display:inline-block;margin-left:6px;font:600 11.5px var(--f-mono);letter-spacing:.03em;padding:3px 10px;border-radius:999px;vertical-align:top;
+  color:var(--sc);background:color-mix(in srgb,var(--sc) 12%,transparent);border:1px solid color-mix(in srgb,var(--sc) 35%,transparent)}
+.s-chips{--sc:#7c3aed}.s-mem{--sc:#2563eb}.s-cloud{--sc:#0891b2}.s-optic{--sc:#c026d3}.s-soft{--sc:#d97706}.s-energy{--sc:#65a30d}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .s-chips{--sc:#a78bfa}:root:not([data-theme="light"]) .s-mem{--sc:#60a5fa}:root:not([data-theme="light"]) .s-cloud{--sc:#22d3ee}:root:not([data-theme="light"]) .s-optic{--sc:#e879f9}:root:not([data-theme="light"]) .s-soft{--sc:#fbbf24}:root:not([data-theme="light"]) .s-energy{--sc:#a3e635}}
+:root[data-theme="dark"] .s-chips{--sc:#a78bfa}:root[data-theme="dark"] .s-mem{--sc:#60a5fa}:root[data-theme="dark"] .s-cloud{--sc:#22d3ee}:root[data-theme="dark"] .s-optic{--sc:#e879f9}:root[data-theme="dark"] .s-soft{--sc:#fbbf24}:root[data-theme="dark"] .s-energy{--sc:#a3e635}
 @media (prefers-reduced-motion:reduce){.home a.card{transition:none}}
