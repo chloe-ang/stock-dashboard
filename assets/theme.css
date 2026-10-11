@@ -59,4 +59,21 @@ nav.sec a{border-radius:999px!important}
 .s-chips{--sc:#7c3aed}.s-mem{--sc:#2563eb}.s-cloud{--sc:#0891b2}.s-optic{--sc:#c026d3}.s-soft{--sc:#d97706}.s-energy{--sc:#65a30d}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .s-chips{--sc:#a78bfa}:root:not([data-theme="light"]) .s-mem{--sc:#60a5fa}:root:not([data-theme="light"]) .s-cloud{--sc:#22d3ee}:root:not([data-theme="light"]) .s-optic{--sc:#e879f9}:root:not([data-theme="light"]) .s-soft{--sc:#fbbf24}:root:not([data-theme="light"]) .s-energy{--sc:#a3e635}}
 :root[data-theme="dark"] .s-chips{--sc:#a78bfa}:root[data-theme="dark"] .s-mem{--sc:#60a5fa}:root[data-theme="dark"] .s-cloud{--sc:#22d3ee}:root[data-theme="dark"] .s-optic{--sc:#e879f9}:root[data-theme="dark"] .s-soft{--sc:#fbbf24}:root[data-theme="dark"] .s-energy{--sc:#a3e635}
+/* upcoming earnings strip */
+#earn{margin:4px 0 36px}
+.earn-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.earn-h h2{margin:0}
+.earn-sub{font:500 12px var(--f-mono);color:var(--muted)}
+.earn-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+@media (max-width:980px){.earn-list{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}}
+.earn-list a{display:flex;flex-direction:column;gap:8px;height:100%;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:var(--r);box-shadow:var(--shadow);color:inherit;text-decoration:none;transition:transform .15s,border-color .15s}
+.earn-list a:hover,.earn-list a:focus-visible{transform:translateY(-2px);border-color:var(--accent);outline:none}
+.earn-d{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.earn-d b{font:700 18px var(--f-display)}
+.earn-d i{font:500 11.5px var(--f-mono);font-style:normal;color:var(--accent)}
+.earn-list .tick{align-self:flex-start}
+.earn-n{font-weight:600;font-size:14px}
+.earn-t{font:500 11.5px var(--f-mono);color:var(--muted)}
+.earn-none{color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.earn-list a{transition:none}}
 @media (prefers-reduced-motion:reduce){.home a.card{transition:none}}
