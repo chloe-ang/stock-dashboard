@@ -1,5 +1,0 @@
-LMND: aq 64, cboe 76.2
-STX: aq 64, cboe 63.6
-NBIS: aq 64, cboe 70.4
-ONDS: aq 64, cboe 64.5
-::notice title=Options iv::LMND aq 64 · STX aq 64 · NBIS aq 64 · ONDS aq 64
