@@ -16,9 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: SEC facts
-        run: python3 research/fetch.py $(cat research/request.txt) > research/log-sec.txt 2>&1 || true
+      - name: Yahoo fundamentals
+        run: node research/yf.mjs $(cat research/request.txt) > research/log-yf.txt 2>&1 || true
       - name: Price history
+        if: false
         run: |
           for t in $(cat research/request.txt); do
             mkdir -p research/px/$t; node scripts/fetch-quote.mjs $t research/px/$t 2y >> research/log-px.txt 2>&1 || true
