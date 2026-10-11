@@ -1,0 +1,4 @@
+LMND OK {"symbol":"LMND","price":46.46,"prevClose":46.91,"time":1791576002,"date":"2026-10-09","state":"CLOSED","source":"Yahoo","historySource":"Yahoo","fetchedAt":1791714783} 501 daily bars
+STX OK {"symbol":"STX","price":783,"prevClose":774.83,"time":1791576000,"date":"2026-10-09","state":"CLOSED","source":"Yahoo","historySource":"Yahoo","fetchedAt":1791714784} 501 daily bars
+NBIS OK {"symbol":"NBIS","price":221.07,"prevClose":219.71,"time":1791576000,"date":"2026-10-09","state":"CLOSED","source":"Yahoo","historySource":"Yahoo","fetchedAt":1791714784} 494 daily bars
+ONDS OK {"symbol":"ONDS","price":6.73,"prevClose":6.85,"time":1791576000,"date":"2026-10-09","state":"CLOSED","source":"Yahoo","historySource":"Yahoo","fetchedAt":1791714785} 501 daily bars
