@@ -40,21 +40,13 @@ STOCKS = [
     ("nvda", "NVDA", "67066G104", r"^NVIDIA"),
     ("zs", "ZS", "98980G102", r"^ZSCALER"),
     ("be", "BE", "093712107", r"^BLOOM ENERGY"),
-    ("aaoi", "AAOI", "03823U102", r"^APPLIED OPTOELECTRONICS"),
     ("amd", "AMD", "007903107", r"^ADVANCED MICRO DEVICES"),
-    ("mp", "MP", "553368101", r"^MP MATERIALS"),
     ("amzn", "AMZN", "023135106", r"^AMAZON"),
     ("msft", "MSFT", "594918104", r"^MICROSOFT"),
-    ("mrvl", "MRVL", "573874104", r"^MARVELL"),
     ("skhy", "SKHY", None, r"^SK HYNIX"),
     ("tsm", "TSM", "874039100", r"^TAIWAN SEMICONDUCTOR"),
     ("avgo", "AVGO", "11135F101", r"^BROADCOM"),
-    ("rok", "ROK", "773903109", r"^ROCKWELL AUTOMATION"),
-    ("amat", "AMAT", "038222105", r"^APPLIED MATLS|^APPLIED MATERIALS"),
-    ("asml", "ASML", "N07059210", r"^ASML HOLDING"),
     ("pltr", "PLTR", "69608A108", r"^PALANTIR"),
-    ("glw", "GLW", "219350105", r"^CORNING INC"),
-    ("ter", "TER", "880770102", r"^TERADYNE"),
 ]
 
 # words kept in capitals when tidying manager names

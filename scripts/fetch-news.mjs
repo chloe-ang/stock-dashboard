@@ -20,21 +20,13 @@ const STOCKS = [
   { t: "NVDA", q: 'Nvidia (stock OR shares OR NVDA OR earnings OR Blackwell OR Rubin)', m: /Nvidia|NVDA|Jensen Huang|Blackwell|Vera Rubin/i },
   { t: "ZS", q: 'Zscaler OR "NASDAQ:ZS"', m: /Zscaler|\bZS\b/ },
   { t: "BE", q: '"Bloom Energy"', m: /Bloom Energy|NYSE:BE/i },
-  { t: "AAOI", q: '"Applied Optoelectronics" OR AAOI', m: /Applied Optoelectronics|AAOI/i },
   { t: "AMD", q: 'AMD (stock OR shares OR earnings OR Instinct OR EPYC OR "Lisa Su")', m: /\bAMD\b|Advanced Micro|Lisa Su|Instinct|EPYC/ },
-  { t: "MP", q: '"MP Materials" OR "Mountain Pass" rare earth', m: /MP Materials|Mountain Pass/i },
   { t: "AMZN", q: 'Amazon (stock OR shares OR AMZN OR earnings OR AWS OR Jassy)', m: /Amazon|AMZN|\bAWS\b|Jassy/ },
   { t: "MSFT", q: 'Microsoft (stock OR shares OR MSFT OR earnings OR Azure OR Copilot)', m: /Microsoft|MSFT|Azure|Nadella|Copilot/ },
-  { t: "MRVL", q: 'Marvell (stock OR shares OR MRVL OR earnings OR "custom silicon" OR optics)', m: /Marvell|MRVL/ },
   { t: "SKHY", q: '"SK hynix" OR "SK Hynix" OR SKHY', m: /SK ?hynix|SKHY|000660/i },
   { t: "TSM", q: 'TSMC (stock OR shares OR TSM OR earnings OR revenue OR 2nm OR Arizona)', m: /TSMC|\bTSM\b|Taiwan Semiconductor|C\.C\. Wei/ },
   { t: "AVGO", q: 'Broadcom (stock OR shares OR AVGO OR earnings OR XPU OR VMware OR "Hock Tan")', m: /Broadcom|AVGO|Hock Tan|VMware/ },
-  { t: "ROK", q: '"Rockwell Automation" OR "NYSE:ROK"', m: /Rockwell Automation|\bROK\b/ },
-  { t: "AMAT", q: '"Applied Materials" OR "NASDAQ:AMAT"', m: /Applied Materials|\bAMAT\b/ },
-  { t: "ASML", q: 'ASML (stock OR shares OR earnings OR EUV OR lithography OR Fouquet)', m: /\bASML\b|Fouquet|EUV/ },
   { t: "PLTR", q: 'Palantir (stock OR shares OR PLTR OR earnings OR AIP OR Karp)', m: /Palantir|PLTR|Alex Karp/ },
-  { t: "GLW", q: '"Corning Inc" OR "Corning Incorporated" OR "NYSE:GLW" OR (Corning fiber)', m: /Corning|\bGLW\b/ },
-  { t: "TER", q: 'Teradyne OR "NASDAQ:TER" OR "Universal Robots"', m: /Teradyne|\bTER\b|Universal Robots/ },
 ];
 const OUT = "data/news.json";
 const DAYS = 30, PER_STOCK = 80;

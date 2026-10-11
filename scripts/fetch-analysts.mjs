@@ -15,10 +15,8 @@ import { writeFileSync, appendFileSync } from "node:fs";
 const STOCKS = [
   ["arm", "ARM"], ["tesla", "TSLA"], ["sndk", "SNDK"], ["intc", "INTC"], ["spcx", "SPCX"], ["mu", "MU"],
   ["lite", "LITE"], ["cohr", "COHR"], ["googl", "GOOGL"], ["meta", "META"], ["nvda", "NVDA"], ["zs", "ZS"],
-  ["be", "BE"], ["aaoi", "AAOI"], ["amd", "AMD"], ["mp", "MP"], ["amzn", "AMZN"], ["msft", "MSFT"],
-  ["mrvl", "MRVL"], ["skhy", "SKHY"], ["tsm", "TSM"], ["avgo", "AVGO"], ["rok", "ROK"],
-  ["amat", "AMAT"], ["asml", "ASML"], ["pltr", "PLTR"], ["glw", "GLW"], ["ter", "TER"],
-];
+  ["be", "BE"], ["amd", "AMD"], ["amzn", "AMZN"], ["msft", "MSFT"],
+  ["skhy", "SKHY"], ["tsm", "TSM"], ["avgo", "AVGO"], ["pltr", "PLTR"], ];
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 const DAYS = 366;
 const summary = (s) => { if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, s + "\n"); };
