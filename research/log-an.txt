@@ -1,0 +1,5 @@
+LMND: 20 actions, 9 analysts
+STX: 83 actions, 23 analysts
+NBIS: 37 actions, 20 analysts
+ONDS: 22 actions, 10 analysts
+::notice title=Analysts::LMND 20/9 · STX 83/23 · NBIS 37/20 · ONDS 22/10
