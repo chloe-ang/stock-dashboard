@@ -53,7 +53,7 @@ nav.sec a{border-radius:999px!important}
 .home a.card.t-bull .rk{background:color-mix(in srgb,var(--up) 14%,transparent)}
 .home a.card.t-cau .rk{background:color-mix(in srgb,var(--down) 12%,transparent)}
 .home .go{font-weight:600}
-.cat{margin-top:36px}
+.cat{margin-top:36px;border-top:none!important;padding:0}
 .cat:first-of-type{margin-top:20px}
 .cat-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
 .cat-h h3{font-size:22px;margin:0}

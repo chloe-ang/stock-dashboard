@@ -1,0 +1,63 @@
+{
+ "ticker": "STX",
+ "asof": "2026-10-11",
+ "quarter": {
+  "en": "Q4 FY2026 (June quarter)",
+  "zh": "2026 财年第四季（6 月季度）"
+ },
+ "reported": "2026-07-28",
+ "timing": "amc",
+ "pre_close": 747.3,
+ "react": {
+  "date": "2026-07-29",
+  "close": 764.43,
+  "pct": 2.3
+ },
+ "since": {
+  "date": "2026-10-09",
+  "close": 783.0,
+  "pct": 4.8
+ },
+ "review": {
+  "en": [
+   "Revenue rose 48% to $3.63B, beating the ~$3.49B consensus, with a record 52.7% non-GAAP gross margin and $5.71 of adjusted EPS against ~$5.10 expected. Fiscal 2026 revenue was $12.2B with $3.1B of free cash flow. CEO Dave Mosley said HAMR drives reached about 40% of nearline exabytes and capacity is booked into 2027, and the company guided the September quarter to $4.1B with operating margins near 50%. CFO Gianluca Romano expects margins and cash generation to keep rising through fiscal 2027.",
+   "The stock had slid about 18% in the four days before the report, so the beat brought only a 2.3% gain the next day, followed by an 11% jump the day after as analysts raised targets. It went on to $973 in mid-August, then fell back as investors worried about new supply: a report that Toshiba would double its AI drive capacity and news of a bidding contest for TDK's heads business cut about 18% in early October."
+  ],
+  "zh": [
+   "营收增长 48% 至 36.3 亿美元，高于约 34.9 亿的预期；非 GAAP 毛利率创纪录达 52.7%，调整后每股收益 5.71 美元，预期约 5.10。2026 财年营收 122 亿美元，自由现金流 31 亿。CEO 戴夫·莫斯利表示 HAMR 硬盘已占近线出货约 40%，产能已预订至 2027 年；公司指引9月季度营收 41 亿美元，营业利润率接近 50%。CFO 吉安卢卡·罗马诺预计 2027 财年利润率与现金创造将持续上升。",
+   "财报前四个交易日股价已下滑约 18%，因此超预期业绩次日仅涨 2.3%，再隔一日随分析师上调目标价大涨 11%。8月中旬一度升至 973 美元，随后因担忧新增供给回落：东芝将把 AI 硬盘产能翻倍的报道，以及竞购 TDK 磁头业务的消息，令股价在10月初下跌约 18%。"
+  ]
+ },
+ "ceo": {
+  "name": {
+   "en": "Dave Mosley",
+   "zh": "戴夫·莫斯利"
+  },
+  "since": "2017",
+  "bio": {
+   "en": "Joined Seagate in 2004 and ran operations, technology and sales before becoming CEO in 2017; now also chairman. He holds a PhD and has led the long bet on HAMR recording, which is now driving record margins.",
+   "zh": "2004 年加入希捷，历任运营、技术与销售负责人，2017 年出任 CEO，现兼任董事长。拥有博士学位，主导了对 HAMR 记录技术的长期押注，如今正推动利润率创纪录。"
+  }
+ },
+ "cfo": {
+  "name": {
+   "en": "Gianluca Romano",
+   "zh": "吉安卢卡·罗马诺"
+  },
+  "since": "2019",
+  "bio": {
+   "en": "CFO since January 2019. Before Seagate he held a series of senior finance roles in the semiconductor industry. Under him Seagate has cut debt and kept capex light while returning cash through dividends and buybacks.",
+   "zh": "2019 年1月起任 CFO。加入希捷前，在半导体行业历任多个高级财务职位。任内希捷削减债务、保持轻资本开支，并以股息与回购回馈股东。"
+  }
+ },
+ "sources": [
+  {
+   "t": "Q4 FY26 call highlights",
+   "u": "https://finance.yahoo.com/technology/ai/articles/seagate-technology-q4-earnings-call-140000287.html"
+  },
+  {
+   "t": "CFO appointment (SEC)",
+   "u": "https://sec.gov/Archives/edgar/data/1137789/000119312518356446/d612256dex991.htm"
+  }
+ ]
+}

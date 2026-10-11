@@ -1,0 +1,63 @@
+{
+ "ticker": "NBIS",
+ "asof": "2026-10-11",
+ "quarter": {
+  "en": "Q2 2026 (June quarter)",
+  "zh": "2026 年第二季（6 月季度）"
+ },
+ "reported": "2026-08-12",
+ "timing": "bmo",
+ "pre_close": 193.23,
+ "react": {
+  "date": "2026-08-12",
+  "close": 259.2,
+  "pct": 34.1
+ },
+ "since": {
+  "date": "2026-10-09",
+  "close": 221.07,
+  "pct": 14.4
+ },
+ "review": {
+  "en": [
+   "Revenue rose 454% to $582M, ahead of the ~$570M consensus, and adjusted EBITDA swung to $236M (41% margin) from a $21M loss a year ago, about 50% above estimates. Run-rate revenue reached $3B, up from $1.9B in March. Management reaffirmed full-year guidance of $3.0–3.4B revenue, $7–9B of year-end ARR and $20–25B of capex, and said four new deals averaging over $1B came with prepayments covering half or more of their cost.",
+   "Shares jumped 34% on the day, from $193 to $259, as the profitability surprise eased fears about the spending plan, and reached $278 two days later. The gain then faded to the low $200s by September as investors weighed the $5.7B quarterly capex and the need for more funding. An October price increase and a new Buy rating from Rosenblatt have kept it in a $204–255 range."
+  ],
+  "zh": [
+   "营收增长 454% 至 5.82 亿美元，高于约 5.7 亿的预期；调整后 EBITDA 由一年前亏损 2100 万转为 2.36 亿（利润率 41%），较预期高约 50%。年化收入达 30 亿美元，3月为 19 亿。管理层重申全年指引：营收 30–34 亿、年末 ARR 70–90 亿、资本开支 200–250 亿，并表示四笔平均逾 10 亿的新合约附带覆盖一半以上成本的预付款。",
+   "盈利超预期缓解了对开支计划的担忧，股价当天从 193 美元跳涨 34% 至 259 美元，两天后升至 278 美元。之后因投资者权衡单季 57 亿美元资本开支及进一步融资需求，涨幅在9月回吐至 200 美元出头。10月提价及 Rosenblatt 新给出的买入评级，令股价维持在 $204–255 区间。"
+  ]
+ },
+ "ceo": {
+  "name": {
+   "en": "Arkady Volozh",
+   "zh": "阿尔卡季·沃洛日"
+  },
+  "since": "2024",
+  "bio": {
+   "en": "Co-founded Yandex in 1997 and built it into Russia's largest search and internet company. After Yandex sold its Russian businesses in 2024, he stayed with the international remainder, renamed Nebius, and leads its AI cloud strategy.",
+   "zh": "1997 年联合创办 Yandex，将其打造成俄罗斯最大的搜索与互联网公司。2024 年 Yandex 出售俄罗斯业务后，他留在更名为 Nebius 的国际部分，领导其 AI 云战略。"
+  }
+ },
+ "cfo": {
+  "name": {
+   "en": "Maria del Dado Alonso Sanchez",
+   "zh": "玛丽亚·德尔达多·阿隆索·桑切斯"
+  },
+  "since": "2025",
+  "bio": {
+   "en": "Group CFO since 2025. Previously CFO of Dutch digital media group Azerion, with earlier finance roles at Amazon and Booking.com. She oversees Nebius's heavy debt and convertible financing.",
+   "zh": "2025 年起任集团 CFO。此前任荷兰数字媒体集团 Azerion 的 CFO，更早曾在亚马逊与 Booking.com 担任财务职务。负责 Nebius 大规模的债务与可转债融资。"
+  }
+ },
+ "sources": [
+  {
+   "t": "Q2 2026 results (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/technology/ai/articles/nebius-q2-revenue-jumps-454-140044127.html"
+  },
+  {
+   "t": "CFO profile (MarketScreener)",
+   "u": "https://marketscreener.com/insider/MARIA-DEL-DADO-ALONSO-SANCHEZ-A3CEH6"
+  }
+ ]
+}

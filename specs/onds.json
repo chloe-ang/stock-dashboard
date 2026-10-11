@@ -1,0 +1,625 @@
+{
+ "dir": "onds",
+ "ticker": "ONDS",
+ "exchange": "NASDAQ",
+ "name": "Ondas",
+ "shares": 582300000.0,
+ "beta": "2.92",
+ "snapshot": {
+  "price": "$6.73",
+  "date": "Oct 9, 2026",
+  "mcap": "$3.9B",
+  "range": "$5.25–14.01"
+ },
+ "eyebrow": {
+  "en": "Ondas Inc. · Common stock · West Palm Beach, Florida",
+  "zh": "Ondas · 普通股 · 佛罗里达州西棕榈滩"
+ },
+ "title": {
+  "en": "Drones, drone-killers and robots, <em>assembled by acquisition</em>.",
+  "zh": "无人机、反无人机与机器人，<em>靠收购拼装而成</em>。"
+ },
+ "lede": {
+  "en": "Ondas has turned from a small rail-radio company into a defense-drone group, buying a string of businesses in Israel, the US and Europe. Revenue went from $6M to $84M in a year, and it targets $525–550M for 2026. Losses are still large, deals are partly paid in stock, and the shares are down about 40% this year.",
+  "zh": "Ondas 已从一家小型铁路无线电公司，转型为国防无人机集团，在以色列、美国与欧洲连续收购。营收一年内从 600 万美元增至 8400 万，2026 年目标 5.25–5.5 亿。亏损仍大，收购部分以股票支付，股价今年下跌约 40%。"
+ },
+ "valuation": {
+  "k": {
+   "en": "Price / sales",
+   "zh": "市销率"
+  },
+  "v": "~7×",
+  "s": {
+   "en": "on $525–550M FY26 revenue target · loss-making",
+   "zh": "按 FY26 营收目标 5.25–5.5 亿 · 仍亏损"
+  }
+ },
+ "analysts": {
+  "k": {
+   "en": "Q3 2026 guide",
+   "zh": "2026 Q3 指引"
+  },
+  "v": "$140–155M",
+  "s": {
+   "en": "revenue · FY26 $525–550M",
+   "zh": "营收 · FY26 5.25–5.5 亿"
+  }
+ },
+ "earnings": {
+  "v": "Nov 12",
+  "s": {
+   "en": "Q3 2026 · estimated date",
+   "zh": "2026年第三季 · 预计日期"
+  }
+ },
+ "sub_price": {
+  "en": "Daily closes with the 50-day average. Ondas peaked at $14 in January and has trended lower since, even as orders and acquisitions piled up.",
+  "zh": "每日收盘价与50日均线。Ondas 1月见顶 14 美元，此后一路走低，尽管订单与收购不断增加。"
+ },
+ "sub_rev": {
+  "en": "Revenue in US$ millions, with GAAP gross margin on the right axis. Most of the growth since late 2025 comes from acquisitions, so year-on-year rates overstate organic growth (85% on a same-portfolio basis in Q2). The last bar is company guidance at the midpoint.",
+  "zh": "营收单位为百万美元，右轴为 GAAP 毛利率。2025 年底以来的增长大多来自收购，因此同比增速高估了内生增长（Q2 同口径增长 85%）。最后一根柱为公司指引中值。"
+ },
+ "rev_cells": [
+  {
+   "k": {
+    "en": "Q2 2026",
+    "zh": "2026 Q2"
+   },
+   "v": "$83.8M",
+   "s": {
+    "en": "13× YoY · +67% QoQ",
+    "zh": "同比 13 倍 · 环比 +67%"
+   }
+  },
+  {
+   "k": {
+    "en": "Organic growth",
+    "zh": "内生增长"
+   },
+   "v": "+85%",
+   "s": {
+    "en": "same portfolio, Q2 YoY",
+    "zh": "同口径，Q2 同比"
+   }
+  },
+  {
+   "k": {
+    "en": "Gross margin",
+    "zh": "毛利率"
+   },
+   "v": "43.1%",
+   "s": {
+    "en": "GAAP · 50.4% adjusted",
+    "zh": "GAAP · 调整后 50.4%"
+   }
+  },
+  {
+   "k": {
+    "en": "Adj. EBITDA",
+    "zh": "调整后 EBITDA"
+   },
+   "v": "−$50.6M",
+   "s": {
+    "en": "Q2 · net loss −$89.7M",
+    "zh": "Q2 · 净亏损 −8970 万"
+   }
+  },
+  {
+   "k": {
+    "en": "Orders since June",
+    "zh": "6月以来订单"
+   },
+   "v": ">$270M",
+   "s": {
+    "en": "pro forma backlog ~$757M",
+    "zh": "备考订单储备约 7.57 亿"
+   }
+  },
+  {
+   "k": {
+    "en": "Cash & investments",
+    "zh": "现金及投资"
+   },
+   "v": "$1.4B",
+   "s": {
+    "en": "Jun 30, 2026 · before Sep deals",
+    "zh": "2026年6月30日 · 9月收购前"
+   }
+  }
+ ],
+ "watch": [
+  {
+   "kind": "plus",
+   "h": {
+    "en": "Orders keep coming",
+    "zh": "订单持续涌入"
+   },
+   "p": {
+    "en": "Ondas has booked more than $270M of orders since June, including a $56M European order for munition safety devices on Oct 5 and US orders for its ULTRA and IonStrike drones.",
+    "zh": "6月以来 Ondas 已获逾 2.7 亿美元订单，包括10月5日一笔 5600 万美元欧洲弹药安全装置订单，以及 ULTRA 与 IonStrike 无人机的美国订单。"
+   }
+  },
+  {
+   "kind": "plus",
+   "h": {
+    "en": "A big cash pile",
+    "zh": "大量现金"
+   },
+   "p": {
+    "en": "About $1.4B of cash and investments at the end of June gives room to fund losses and more acquisitions without new debt.",
+    "zh": "6月底约 14 亿美元现金及投资，可在不举债的情况下支撑亏损与更多收购。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "The H2 revenue ramp",
+    "zh": "下半年营收爬坡"
+   },
+   "p": {
+    "en": "The guide needs about $390M in H2, almost triple H1. Q3 is guided to $140–155M; shipping on time is the main test.",
+    "zh": "指引意味下半年需约 3.9 亿美元，接近上半年三倍。Q3 指引 1.4–1.55 亿；按时交付是主要考验。"
+   }
+  },
+  {
+   "kind": "risk",
+   "h": {
+    "en": "Dilution",
+    "zh": "股权摊薄"
+   },
+   "p": {
+    "en": "Ondas pays for many deals partly in shares, including $100M of stock for GATE and Bron in September, and the share count has risen sharply.",
+    "zh": "Ondas 多项收购部分以股票支付，包括9月为 GATE 与 Bron 支付的 1 亿美元股票，股数大幅增加。"
+   }
+  },
+  {
+   "kind": "risk",
+   "h": {
+    "en": "Large losses",
+    "zh": "巨额亏损"
+   },
+   "p": {
+    "en": "Q2 operating loss was $163M including $106M of non-cash charges. Company-wide adjusted EBITDA profit is not targeted until Q4 2027.",
+    "zh": "Q2 营业亏损 1.63 亿美元，其中 1.06 亿为非现金费用。公司整体调整后 EBITDA 盈利目标要到 2027 年 Q4。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "Integration",
+    "zh": "整合"
+   },
+   "p": {
+    "en": "Ondas now runs many acquired businesses across several countries. Keeping them on track while scaling production is hard for a young group.",
+    "zh": "Ondas 现管理多国的众多收购业务。在扩大生产的同时整合好它们，对年轻集团是一大挑战。"
+   }
+  }
+ ],
+ "calendar": [
+  {
+   "date": "Nov 12, 2026",
+   "h": {
+    "en": "Q3 2026 earnings (est.)",
+    "zh": "2026年第三季财报（预计）"
+   },
+   "p": {
+    "en": "Guide: $140–155M revenue. Analysts expect a loss of about $0.06 a share.",
+    "zh": "指引：营收 1.4–1.55 亿美元。分析师预计每股亏损约 $0.06。"
+   }
+  },
+  {
+   "date": "Q4 2026",
+   "h": {
+    "en": "Platform profitability",
+    "zh": "运营平台盈利"
+   },
+   "p": {
+    "en": "Management targets positive adjusted EBITDA at its operating platform by Q4 2026.",
+    "zh": "管理层目标 2026 年 Q4 运营平台调整后 EBITDA 转正。"
+   }
+  },
+  {
+   "date": "Q4 2027",
+   "h": {
+    "en": "Company-wide profitability",
+    "zh": "公司整体盈利"
+   },
+   "p": {
+    "en": "Target for positive adjusted EBITDA across the whole company.",
+    "zh": "公司整体调整后 EBITDA 转正的目标时点。"
+   }
+  }
+ ],
+ "sources": [
+  [
+   "Q2 2026 results press release",
+   "https://ir.ondas.com/press-releases/detail/326/ondas-posts-record-q2-2026-revenue-of-83-8-million-on"
+  ],
+  [
+   "Q2 2026 results summary (TradingView)",
+   "https://www.tradingview.com/news/tradingview:a6e63d4abc74e:0-ondas-posts-record-q2-revenue-83-8m-raises-2026-revenue-target-to-525-550m/"
+  ],
+  [
+   "Q2 2026 call transcript",
+   "https://www.fool.com/earnings/call-transcripts/2026/08/20/ondas-onds-q2-2026-earnings-call-transcript/"
+  ],
+  [
+   "Q2 loss and guidance (Zacks)",
+   "https://www.zacks.com/stock/news/2975120/ondas-posts-wider-than-expected-q2-loss-delivers-solid-revenue-growth"
+  ],
+  [
+   "$165M of new orders, Oct 7 (Proactive)",
+   "https://proactiveinvestors.com/companies/news/1099757/ondas-shares-fall-despite-company-s-announcement-of-new-orders-1099757.html"
+  ],
+  [
+   "GATE/Bron deal and $56M order",
+   "https://aistockwire.com/blog/ondas-onds-56-million-safe-arm-device-order-loitering-munition-october-2026"
+  ],
+  [
+   "Quarterly income statement (Stock Analysis)",
+   "https://stockanalysis.com/stocks/onds/financials/?p=quarterly"
+  ],
+  [
+   "Price, market cap and beta: Yahoo Finance, as of Oct 9, 2026",
+   "https://finance.yahoo.com/quote/ONDS"
+  ]
+ ],
+ "foot": {
+  "en": "Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with Ondas Inc.",
+  "zh": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 Ondas Inc. 无关联。"
+ },
+ "quarters": [
+  [
+   "Q3 2023",
+   "Sep 2023",
+   2.67,
+   20.6,
+   -222.1,
+   -0.15
+  ],
+  [
+   "Q4 2023",
+   "Dec 2023",
+   4.96,
+   34.88,
+   -224.8,
+   -0.26
+  ],
+  [
+   "Q1 2024",
+   "Mar 2024",
+   0.63,
+   -61.9,
+   -1449.21,
+   -0.17
+  ],
+  [
+   "Q2 2024",
+   "Jun 2024",
+   0.96,
+   -19.79,
+   -864.58,
+   -0.14
+  ],
+  [
+   "Q3 2024",
+   "Sep 2024",
+   1.48,
+   3.38,
+   -585.14,
+   -0.15
+  ],
+  [
+   "Q4 2024",
+   "Dec 2024",
+   4.13,
+   21.31,
+   -206.3,
+   -0.14
+  ],
+  [
+   "Q1 2025",
+   "Mar 2025",
+   4.25,
+   35.06,
+   -242.59,
+   -0.15
+  ],
+  [
+   "Q2 2025",
+   "Jun 2025",
+   6.27,
+   53.11,
+   -147.53,
+   -0.08
+  ],
+  [
+   "Q3 2025",
+   "Sep 2025",
+   10.1,
+   25.74,
+   -153.47,
+   -0.03
+  ],
+  [
+   "Q4 2025",
+   "Dec 2025",
+   30.11,
+   42.28,
+   -63.14,
+   -0.27
+  ],
+  [
+   "Q1 2026",
+   "Mar 2026",
+   50.12,
+   49.2,
+   -73.56,
+   0.59
+  ],
+  [
+   "Q2 2026",
+   "Jun 2026",
+   83.77,
+   43.13,
+   -194.46,
+   -0.19
+  ]
+ ],
+ "guide": [
+  "Q3 2026e",
+  147.5,
+  "Sep 2026 · guidance midpoint",
+  "2026年9月 · 指引中值"
+ ],
+ "fcf": {
+  "sub": {
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 12 quarters from Q3 2023 to Q2 2026. Shaded bars and italic rows are estimates.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2023 年第三季至 2026 年第二季共 12 个季度。浅色柱与斜体行为估算。"
+  },
+  "hist": [
+   [
+    "Q3 2023",
+    "Sep 2023",
+    -6.24,
+    0.03,
+    -6.3
+   ],
+   [
+    "Q4 2023",
+    "Dec 2023",
+    -5.91,
+    0.12,
+    -6.0
+   ],
+   [
+    "Q1 2024",
+    "Mar 2024",
+    -7.46,
+    1.19,
+    -8.7
+   ],
+   [
+    "Q2 2024",
+    "Jun 2024",
+    -8.82,
+    1.09,
+    -9.9
+   ],
+   [
+    "Q3 2024",
+    "Sep 2024",
+    -9.09,
+    -0.68,
+    -8.4
+   ],
+   [
+    "Q4 2024",
+    "Dec 2024",
+    -8.11,
+    0.03,
+    -8.1
+   ],
+   [
+    "Q1 2025",
+    "Mar 2025",
+    -6.66,
+    0.17,
+    -6.8
+   ],
+   [
+    "Q2 2025",
+    "Jun 2025",
+    -8.4,
+    0.1,
+    -8.5
+   ],
+   [
+    "Q3 2025",
+    "Sep 2025",
+    -10.95,
+    0.17,
+    -11.1
+   ],
+   [
+    "Q4 2025",
+    "Dec 2025",
+    -12.73,
+    1.6,
+    -14.3
+   ],
+   [
+    "Q1 2026",
+    "Mar 2026",
+    -51.3,
+    1.33,
+    -52.6
+   ],
+   [
+    "Q2 2026",
+    "Jun 2026",
+    -86.08,
+    7.76,
+    -93.8
+   ]
+  ],
+  "est": [
+   [
+    "Q3 2026",
+    "Sep 2026",
+    -65,
+    5,
+    -70
+   ],
+   [
+    "Q4 2026",
+    "Dec 2026",
+    -45,
+    5,
+    -50
+   ],
+   [
+    "Q1 2027",
+    "Mar 2027",
+    -40,
+    5,
+    -45
+   ],
+   [
+    "Q2 2027",
+    "Jun 2027",
+    -30,
+    5,
+    -35
+   ]
+  ],
+  "cash": {
+   "k": {
+    "en": "Cash & investments",
+    "zh": "现金及投资"
+   },
+   "v": "$1.4B",
+   "s": {
+    "en": "Jun 30, 2026 · incl. restricted",
+    "zh": "2026年6月30日 · 含受限现金"
+   }
+  },
+  "read": [
+   {
+    "en": "Ondas burned a steady $6–11M a quarter while it was small. Since late 2025 the burn has grown with the business, to $94M in Q2 2026, as acquired companies, working capital for big orders and public-company costs piled up. Its cash comes from repeated share sales and warrant exercises, not from operations.",
+    "zh": "Ondas 规模小时每季稳定烧掉 600–1100 万美元。2025 年底以来，随收购企业、大额订单所需营运资金及上市公司成本增加，烧钱规模随之扩大，2026 年 Q2 达 9400 万美元。现金来自多次增发与认股权证行权，而非经营。"
+   },
+   {
+    "en": "My estimate assumes losses narrow as guided, with the operating platform near break-even by Q4 2026, giving about −$200M of free cash flow over four quarters. That is well covered by the $1.4B cash pile, but about $160M was also spent on acquisitions in September.",
+    "zh": "我的估计假设亏损如指引收窄、运营平台在 2026 年 Q4 接近收支平衡，四季自由现金流约 −2 亿美元。14 亿美元现金足以覆盖，但9月另有约 1.6 亿美元用于收购。"
+   }
+  ],
+  "out": [
+   {
+    "h": {
+     "en": "Acquisitions",
+     "zh": "收购"
+    },
+    "p": {
+     "en": "$105M cash for GATE and Bron plus $56M for three defense businesses in September, with earn-outs on top.",
+     "zh": "9月以 1.05 亿美元现金收购 GATE 与 Bron，另以 5600 万收购三家国防企业，另有业绩对赌付款。"
+    }
+   },
+   {
+    "h": {
+     "en": "Operating losses",
+     "zh": "经营亏损"
+    },
+    "p": {
+     "en": "Adjusted EBITDA loss was $50.6M in Q2 and is guided to shrink.",
+     "zh": "Q2 调整后 EBITDA 亏损 5060 万美元，指引将收窄。"
+    }
+   },
+   {
+    "h": {
+     "en": "Working capital",
+     "zh": "营运资金"
+    },
+    "p": {
+     "en": "Building inventory for large drone and munition orders ties up cash.",
+     "zh": "为大额无人机与弹药订单备货占用现金。"
+    }
+   }
+  ],
+  "in": [
+   {
+    "h": {
+     "en": "Share sales",
+     "zh": "股票发行"
+    },
+    "p": {
+     "en": "Equity raises lifted cash from $68M a year ago to about $1.4B.",
+     "zh": "股权融资令现金从一年前 6800 万升至约 14 亿美元。"
+    }
+   },
+   {
+    "h": {
+     "en": "Customer orders",
+     "zh": "客户订单"
+    },
+    "p": {
+     "en": "Over $270M of orders since June should turn into revenue and cash in coming quarters.",
+     "zh": "6月以来逾 2.7 亿美元订单将在未来几季转化为营收与现金。"
+    }
+   },
+   {
+    "h": {
+     "en": "Higher margins",
+     "zh": "更高利润率"
+    },
+    "p": {
+     "en": "Adjusted gross margin of about 50% helps as volumes grow.",
+     "zh": "调整后毛利率约 50%，随规模增长发挥作用。"
+    }
+   }
+  ],
+  "bridge": [
+   [
+    {
+     "en": "Cash, Jun 2026",
+     "zh": "2026年6月现金"
+    },
+    1384
+   ],
+   [
+    {
+     "en": "Free cash flow, 4 quarters (est.)",
+     "zh": "4季自由现金流（估）"
+    },
+    -200
+   ]
+  ],
+  "bridgeEnd": {
+   "en": "Before further acquisitions, Jun 2027 (est.)",
+   "zh": "2027年6月，未计后续收购（估）"
+  },
+  "bridgeNote": {
+   "en": "September's acquisitions used roughly $160M of this cash, and Ondas has said it will keep buying.",
+   "zh": "9月的收购已用去约 1.6 亿美元，Ondas 表示将继续收购。"
+  },
+  "extraNote": {
+   "en": "Cash includes restricted cash and short-term investments.",
+   "zh": "现金包括受限现金与短期投资。"
+  },
+  "src": [
+   [
+    "Quarterly cash flow statement (Stock Analysis)",
+    "https://stockanalysis.com/stocks/onds/financials/cash-flow-statement/?p=quarterly"
+   ],
+   [
+    "Q2 2026 results",
+    "https://ir.ondas.com/press-releases/detail/326/ondas-posts-record-q2-2026-revenue-of-83-8-million-on"
+   ],
+   [
+    "September acquisitions",
+    "https://aistockwire.com/blog/ondas-onds-56-million-safe-arm-device-order-loitering-munition-october-2026"
+   ]
+  ]
+ }
+}

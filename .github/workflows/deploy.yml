@@ -57,6 +57,10 @@ jobs:
           node scripts/fetch-quote.mjs TSM tsm/data 2y
           node scripts/fetch-quote.mjs AVGO avgo/data 2y
           node scripts/fetch-quote.mjs PLTR pltr/data 2y
+          node scripts/fetch-quote.mjs LMND lmnd/data 2y
+          node scripts/fetch-quote.mjs STX stx/data 2y
+          node scripts/fetch-quote.mjs NBIS nbis/data 2y
+          node scripts/fetch-quote.mjs ONDS onds/data 2y
 
       - name: Fetch option chains
         run: node scripts/fetch-options.mjs chain
@@ -70,7 +74,7 @@ jobs:
           cp index.html .nojekyll _site/
           cp data/news.json _site/data/
           cp assets/*.js assets/*.css _site/assets/
-          for d in arm tesla sndk intc spcx mu lite cohr googl meta nvda zs be amd amzn msft skhy tsm avgo pltr; do
+          for d in arm tesla sndk intc spcx mu lite cohr googl meta nvda zs be amd amzn msft skhy tsm avgo pltr lmnd stx nbis onds; do
             mkdir -p _site/$d
             cp $d/index.html $d/fcf-data.js $d/ta.json _site/$d/
             cp -r $d/data _site/$d/

@@ -1,0 +1,63 @@
+{
+ "ticker": "LMND",
+ "asof": "2026-10-11",
+ "quarter": {
+  "en": "Q2 2026 (June quarter)",
+  "zh": "2026 年第二季（6 月季度）"
+ },
+ "reported": "2026-07-29",
+ "timing": "bmo",
+ "pre_close": 62.11,
+ "react": {
+  "date": "2026-07-29",
+  "close": 47.38,
+  "pct": -23.7
+ },
+ "since": {
+  "date": "2026-10-09",
+  "close": 46.46,
+  "pct": -25.2
+ },
+ "review": {
+  "en": [
+   "In-force premium grew 32.5% to $1.43B, the 11th straight quarter of faster growth, and revenue jumped 79% to $294M, just ahead of the ~$291M consensus; the net loss of $0.56 a share matched estimates. Gross profit rose 76% to $113M and the adjusted EBITDA loss shrank 54% to $19M. CEO Daniel Schreiber reaffirmed the first positive adjusted EBITDA quarter in Q4, which CFO Tim Bixby put at about $8M, and revenue guidance was raised to $1.21–1.22B.",
+   "The stock fell 24% on the day, from $62 to $47, as investors focused on growth spending rising faster than expected and the slow path to profit. It bounced to $54 a week later but drifted lower into September, hitting a 52-week low near $44. A CFO change announced alongside the results added to the caution."
+  ],
+  "zh": [
+   "有效保费增长 32.5% 至 14.3 亿美元，连续 11 季加速；营收大增 79% 至 2.94 亿美元，略高于约 2.91 亿的预期；每股净亏损 0.56 美元，与预期一致。毛利增长 76% 至 1.13 亿美元，调整后 EBITDA 亏损收窄 54% 至 1900 万。CEO 丹尼尔·施赖伯重申 Q4 将迎来首个调整后 EBITDA 为正的季度，CFO 蒂姆·比克斯比预计约 800 万美元，营收指引上调至 12.1–12.2 亿。",
+   "投资者聚焦增长开支增速超预期及盈利之路漫长，股价当天从 62 美元跌 24% 至 47 美元。一周后反弹至 54 美元，但9月再度走低，触及约 44 美元的52周低点。与业绩一同公布的 CFO 变动也加重了观望情绪。"
+  ]
+ },
+ "ceo": {
+  "name": {
+   "en": "Daniel Schreiber",
+   "zh": "丹尼尔·施赖伯"
+  },
+  "since": "2015",
+  "bio": {
+   "en": "Co-founded Lemonade in 2015 with Shai Wininger and has led it since; also chairman. Previously president of wireless-charging company Powermat and an executive at SanDisk/M-Systems; trained as a lawyer at King's College London.",
+   "zh": "2015 年与沙伊·维宁格联合创办 Lemonade 并一直领导公司，兼任董事长。此前任无线充电公司 Powermat 总裁，并曾任职于 SanDisk/M-Systems；毕业于伦敦国王学院法律系。"
+  }
+ },
+ "cfo": {
+  "name": {
+   "en": "Tim Bixby",
+   "zh": "蒂姆·比克斯比"
+  },
+  "since": "2017",
+  "bio": {
+   "en": "CFO since 2017 and moving to the board on Jan 1, 2027. Previously CFO of Shutterstock and CFO and president of LivePerson; Dartmouth graduate with a Harvard MBA.",
+   "zh": "2017 年起任 CFO，将于 2027年1月1日转任董事。此前任 Shutterstock 的 CFO，以及 LivePerson 的 CFO 兼总裁；达特茅斯学院毕业，哈佛 MBA。"
+  }
+ },
+ "sources": [
+  {
+   "t": "Q2 2026 call transcript",
+   "u": "https://fool.com/earnings/call-transcripts/2026/08/07/lemonade-lmnd-q2-2026-earnings-call-transcript"
+  },
+  {
+   "t": "Officers (CSIMarket)",
+   "u": "https://csimarket.com/stocks/LMND-Officers-Directors.html"
+  }
+ ]
+}

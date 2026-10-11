@@ -1,0 +1,66 @@
+{
+ "asof": "Oct 9, 2026",
+ "close": 783.0,
+ "bias": {
+  "en": "Short-term downtrend · testing the $750s",
+  "zh": "短线下行 · 测试 750 美元一带"
+ },
+ "read": [
+  {
+   "en": "Seagate's long-term trend is still up: price is well above the 200-day average ($664), and the stock is up about 170% this year. But the short term has broken down. Two drops in a week (−10% on Oct 2, −9% on Oct 6) pushed it below the 5, 10, 30 and 100-day averages, MACD crossed below its signal on Oct 6, and RSI at 40 is weak but not oversold.",
+   "zh": "希捷长期趋势仍向上：股价远高于 200 日均线（$664），今年上涨约 170%。但短线已破位。一周内两次大跌（10月2日 −10%、10月6日 −9%）令股价跌破 5、10、30 及 100 日均线，MACD 于10月6日下穿信号线，RSI 40 偏弱但未超卖。"
+  },
+  {
+   "en": "The first support is $758, the Oct 8 intraday low, then $747, the close just before the July report. A daily close below that opens the 200-day near $664. On the way up, $812 (5-day) and the $853–872 zone (30 and 100-day averages) are resistance, then $946, the Oct 1 close before the selloff. The Oct 27 report is the likely trigger either way.",
+   "zh": "第一支撑为 $758（10月8日盘中低点），其次为 $747（7月财报前收盘价）。若日线收盘跌破，下看 200 日均线约 $664。上方阻力依次为 $812（5日均线）、$853–872（30 与 100 日均线），再到 $946（暴跌前 10月1日收盘价）。10月27日财报料是方向触发点。"
+  }
+ ],
+ "levels": {
+  "r": [
+   [
+    812,
+    {
+     "en": "5-day average",
+     "zh": "5日均线"
+    }
+   ],
+   [
+    862,
+    {
+     "en": "30 and 100-day averages ($853–872)",
+     "zh": "30 与 100 日均线（$853–872）"
+    }
+   ],
+   [
+    946,
+    {
+     "en": "Oct 1 close, before the selloff",
+     "zh": "暴跌前 10月1日收盘价"
+    }
+   ]
+  ],
+  "s": [
+   [
+    758,
+    {
+     "en": "Oct 8 intraday low",
+     "zh": "10月8日盘中低点"
+    }
+   ],
+   [
+    747,
+    {
+     "en": "Close before the July report",
+     "zh": "7月财报前收盘价"
+    }
+   ],
+   [
+    664,
+    {
+     "en": "200-day average",
+     "zh": "200日均线"
+    }
+   ]
+  ]
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "asof": "Oct 9, 2026",
+ "close": 221.07,
+ "bias": {
+  "en": "Range-bound $204–255 · slipped under the 30/100-day",
+  "zh": "区间 $204–255 · 跌破 30/100 日均线"
+ },
+ "read": [
+  {
+   "en": "Nebius has chopped sideways since its August earnings jump, between about $204 and $255. Price just slipped under the 30-day ($226) and 100-day ($224) averages, which sit almost on top of each other, and below the 5 and 10-day. MACD crossed below its signal on Oct 8 and RSI is a neutral 47. The 200-day ($171) is far below and still rising, so the bigger trend is intact.",
+   "zh": "Nebius 自8月财报跳涨后横盘震荡，区间约 $204–255。股价刚跌破几乎重叠的 30 日（$226）与 100 日（$224）均线，也低于 5 日与 10 日均线。MACD 于10月8日下穿信号线，RSI 47 中性。200 日均线（$171）远在下方且仍上行，大趋势未变。"
+  },
+  {
+   "en": "Support is $204, the bottom of the recent range, then $193, the close before the August report that gapped the stock up. Below that the 200-day near $171 is the line for the longer trend. Resistance is $224–226 (the averages just overhead), then $255 (Oct 6 high) and the June record near $287. Moves of 5–8% a day are normal here.",
+   "zh": "支撑为 $204（近期区间底部），其次为 $193（8月财报跳空前收盘价）。再往下，约 $171 的 200 日均线是长期趋势分界。阻力为 $224–226（上方均线），然后是 $255（10月6日高点）及6月约 $287 的纪录。该股单日 5–8% 的波动属常态。"
+  }
+ ],
+ "levels": {
+  "r": [
+   [
+    226,
+    {
+     "en": "30 and 100-day averages",
+     "zh": "30 与 100 日均线"
+    }
+   ],
+   [
+    255,
+    {
+     "en": "Oct 6 high, top of range",
+     "zh": "10月6日高点，区间上沿"
+    }
+   ],
+   [
+    287,
+    {
+     "en": "June record close",
+     "zh": "6月收盘纪录"
+    }
+   ]
+  ],
+  "s": [
+   [
+    204,
+    {
+     "en": "Bottom of the 3-week range",
+     "zh": "近三周区间底部"
+    }
+   ],
+   [
+    193,
+    {
+     "en": "Close before the August gap up",
+     "zh": "8月跳空前收盘价"
+    }
+   ],
+   [
+    171,
+    {
+     "en": "200-day average",
+     "zh": "200日均线"
+    }
+   ]
+  ]
+ }
+}

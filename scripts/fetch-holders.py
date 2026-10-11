@@ -47,6 +47,10 @@ STOCKS = [
     ("tsm", "TSM", "874039100", r"^TAIWAN SEMICONDUCTOR"),
     ("avgo", "AVGO", "11135F101", r"^BROADCOM"),
     ("pltr", "PLTR", "69608A108", r"^PALANTIR"),
+    ("lmnd", "LMND", None, r"^LEMONADE"),
+    ("stx", "STX", None, r"^SEAGATE TECH"),
+    ("nbis", "NBIS", None, r"^NEBIUS"),
+    ("onds", "ONDS", None, r"^ONDAS"),
 ]
 
 # words kept in capitals when tidying manager names

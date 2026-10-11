@@ -1,0 +1,581 @@
+{
+ "dir": "nbis",
+ "ticker": "NBIS",
+ "exchange": "NASDAQ",
+ "name": "Nebius Group",
+ "shares": 253900000.0,
+ "beta": "1.46",
+ "snapshot": {
+  "price": "$221.07",
+  "date": "Oct 9, 2026",
+  "mcap": "$56.1B",
+  "range": "$74–287"
+ },
+ "eyebrow": {
+  "en": "Nebius Group N.V. · Class A shares · Amsterdam",
+  "zh": "Nebius 集团 · A 类股 · 阿姆斯特丹"
+ },
+ "title": {
+  "en": "Renting out AI supercomputers, <em>and building them as fast as it can</em>.",
+  "zh": "出租 AI 超级计算机，<em>并以最快速度建造</em>。"
+ },
+ "lede": {
+  "en": "Nebius runs its own GPU data centers and rents the computing power to AI labs and companies. Revenue grew 454% last quarter to $582M, run-rate revenue hit $3B, and management targets $7–9B by December. To get there it plans $20–25B of capex this year, paid for with debt, convertible bonds and customer prepayments.",
+  "zh": "Nebius 自建 GPU 数据中心，把算力出租给 AI 实验室与企业。上季营收增长 454% 至 5.82 亿美元，年化收入达 30 亿，管理层目标 12 月达到 70–90 亿。为此今年计划 200–250 亿美元资本开支，资金来自债务、可转债与客户预付款。"
+ },
+ "valuation": {
+  "k": {
+   "en": "Price / sales",
+   "zh": "市销率"
+  },
+  "v": "~18×",
+  "s": {
+   "en": "on $3.2B FY26 guide midpoint · ~7× year-end ARR target",
+   "zh": "按 FY26 指引中值 32 亿 · 年末 ARR 目标约 7 倍"
+  }
+ },
+ "analysts": {
+  "k": {
+   "en": "FY26 guide",
+   "zh": "FY26 指引"
+  },
+  "v": "$3.0–3.4B",
+  "s": {
+   "en": "revenue · ARR $7–9B by Dec · EBITDA margin ~40%",
+   "zh": "营收 · 12月 ARR 70–90 亿 · EBITDA 利润率约 40%"
+  }
+ },
+ "earnings": {
+  "v": "Nov 10",
+  "s": {
+   "en": "Q3 2026 · before the open",
+   "zh": "2026年第三季 · 盘前"
+  }
+ },
+ "sub_price": {
+  "en": "Daily closes with the 50-day average. Nebius roughly tripled from its February low, with sharp swings around each capacity and funding update.",
+  "zh": "每日收盘价与50日均线。Nebius 自2月低点上涨约两倍，每逢产能与融资消息都大幅波动。"
+ },
+ "sub_rev": {
+  "en": "Revenue in US$ millions from continuing operations, with gross margin on the right axis. History starts in 2024, after the sale of the Russian Yandex businesses. The last bar is my estimate of what the full-year guide implies, not company guidance.",
+  "zh": "营收单位为百万美元（持续经营业务），右轴为毛利率。历史数据始于 2024 年，即出售俄罗斯 Yandex 业务之后。最后一根柱为我根据全年指引推算的估计，并非公司季度指引。"
+ },
+ "rev_cells": [
+  {
+   "k": {
+    "en": "Q2 2026",
+    "zh": "2026 Q2"
+   },
+   "v": "$582M",
+   "s": {
+    "en": "+454% YoY · +46% QoQ",
+    "zh": "同比 +454% · 环比 +46%"
+   }
+  },
+  {
+   "k": {
+    "en": "ARR, end of June",
+    "zh": "6月末年化收入"
+   },
+   "v": "$3.0B",
+   "s": {
+    "en": "from $1.9B in March",
+    "zh": "3月为 19 亿"
+   }
+  },
+  {
+   "k": {
+    "en": "Adj. EBITDA",
+    "zh": "调整后 EBITDA"
+   },
+   "v": "$236M",
+   "s": {
+    "en": "41% margin · −$21M a year ago",
+    "zh": "利润率 41% · 一年前 −2100 万"
+   }
+  },
+  {
+   "k": {
+    "en": "Q2 capex",
+    "zh": "Q2 资本开支"
+   },
+   "v": "$5.7B",
+   "s": {
+    "en": "9.7× revenue · FY26 plan $20–25B",
+    "zh": "营收的 9.7 倍 · FY26 计划 200–250 亿"
+   }
+  },
+  {
+   "k": {
+    "en": "Backlog",
+    "zh": "订单储备"
+   },
+   "v": ">$40B",
+   "s": {
+    "en": "four deals averaging >$1B each in Q2",
+    "zh": "Q2 签下四笔平均逾 10 亿的合约"
+   }
+  },
+  {
+   "k": {
+    "en": "Cash",
+    "zh": "现金"
+   },
+   "v": "$8.0B",
+   "s": {
+    "en": "Jun 2026 · debt $10.2B",
+    "zh": "2026年6月 · 债务 102 亿"
+   }
+  }
+ ],
+ "watch": [
+  {
+   "kind": "plus",
+   "h": {
+    "en": "Demand outruns supply",
+    "zh": "需求超过供给"
+   },
+   "p": {
+    "en": "Run-rate revenue rose 58% in one quarter to $3B, and on-demand GPU prices were raised 17–21% on Oct 1. Customers are signing multi-year contracts with large prepayments.",
+    "zh": "年化收入一季增长 58% 至 30 亿美元，10月1日按需 GPU 价格上调 17–21%。客户签订多年合约并大额预付。"
+   }
+  },
+  {
+   "kind": "plus",
+   "h": {
+    "en": "Prepayments fund the build",
+    "zh": "预付款支撑扩建"
+   },
+   "p": {
+    "en": "Most new deals came with prepayments covering 50–60% of the related capex; management expects more than $9B of prepayments in 2026.",
+    "zh": "多数新合约附带预付款，覆盖相关资本开支的 50–60%；管理层预计 2026 年预付款逾 90 亿美元。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "The second-half ramp",
+    "zh": "下半年爬坡"
+   },
+   "p": {
+    "en": "H1 revenue was $981M, so the $3.0–3.4B guide needs $2.0–2.4B in H2, roughly double the June run rate. Q3 shows whether new capacity is landing on time.",
+    "zh": "上半年营收 9.81 亿美元，30–34 亿的指引意味下半年需 20–24 亿，约为6月年化水平的两倍。Q3 将显示新产能是否按时上线。"
+   }
+  },
+  {
+   "kind": "risk",
+   "h": {
+    "en": "Heavy spending and debt",
+    "zh": "巨额开支与负债"
+   },
+   "p": {
+    "en": "Capex was $5.7B in Q2 against $582M of revenue, and debt reached $10.2B. Analysts expect Nebius to raise more debt or equity, which could dilute shareholders.",
+    "zh": "Q2 资本开支 57 亿美元，营收仅 5.82 亿，债务升至 102 亿。分析师预计 Nebius 还需发债或增发，可能摊薄股东。"
+   }
+  },
+  {
+   "kind": "risk",
+   "h": {
+    "en": "GPU pricing and competition",
+    "zh": "GPU 价格与竞争"
+   },
+   "p": {
+    "en": "Nebius competes with CoreWeave and the big clouds. If GPU supply loosens, rental prices could fall before the new data centers pay back.",
+    "zh": "Nebius 与 CoreWeave 及大型云厂商竞争。若 GPU 供给放松，租赁价格可能在新数据中心回本前下跌。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "Software and inference",
+    "zh": "软件与推理"
+   },
+   "p": {
+    "en": "The Token Factory inference service and the Oct 1 purchase of Inferize aim to lift margins beyond raw GPU rental.",
+    "zh": "Token Factory 推理服务及10月1日收购的 Inferize，旨在让利润率超越单纯的 GPU 租赁。"
+   }
+  }
+ ],
+ "calendar": [
+  {
+   "date": "Nov 10, 2026",
+   "h": {
+    "en": "Q3 2026 earnings",
+    "zh": "2026年第三季财报"
+   },
+   "p": {
+    "en": "Watch ARR against the $7–9B year-end target and how much new capacity came online.",
+    "zh": "关注 ARR 与 70–90 亿年末目标的差距，以及新产能上线情况。"
+   }
+  },
+  {
+   "date": "Dec 2026",
+   "h": {
+    "en": "Year-end capacity target",
+    "zh": "年末产能目标"
+   },
+   "p": {
+    "en": "Management aims for 800 MW to 1 GW of connected power by the end of 2026.",
+    "zh": "管理层目标 2026 年底接入电力 800 MW 至 1 GW。"
+   }
+  },
+  {
+   "date": "Feb 2027",
+   "h": {
+    "en": "Q4 2026 earnings",
+    "zh": "2026年第四季财报"
+   },
+   "p": {
+    "en": "Date not yet announced; also the likely timing of 2027 guidance.",
+    "zh": "日期未公布；2027 年指引也可能同时公布。"
+   }
+  }
+ ],
+ "sources": [
+  [
+   "Q2 2026 results and guidance (Yahoo Finance)",
+   "https://finance.yahoo.com/technology/ai/articles/nebius-q2-revenue-jumps-454-140044127.html"
+  ],
+  [
+   "Q2 2026 call highlights (Investing.com)",
+   "https://ca.investing.com/news/company-news/nebius-group-nv-nbis-q2-2026-earnings-call-highlights-revenue-surges-454-as-ai-capacity--4800145"
+  ],
+  [
+   "Q2 2026 capex vs revenue analysis (Tradune)",
+   "https://tradune.com/earnings/nebius-q2-2026"
+  ],
+  [
+   "Q2 2026 earnings call transcript",
+   "https://www.fool.com/earnings/call-transcripts/2026/08/19/nebius-nbis-q2-2026-earnings-call-transcript/"
+  ],
+  [
+   "October price increase and backlog (TradingNews)",
+   "https://tradingnews.com/news/nebius-breaks-abofe-250-usd-after-30-percent-september-drawdown"
+  ],
+  [
+   "Rosenblatt initiation, Oct 9",
+   "https://finance.yahoo.com/markets/stocks/articles/rosenblatt-launches-nebius-stock-coverage-093924044.html"
+  ],
+  [
+   "Quarterly income statement (Stock Analysis)",
+   "https://stockanalysis.com/stocks/nbis/financials/?p=quarterly"
+  ],
+  [
+   "Price, market cap and beta: Yahoo Finance, as of Oct 9, 2026",
+   "https://finance.yahoo.com/quote/NBIS"
+  ]
+ ],
+ "foot": {
+  "en": "Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with Nebius Group N.V.",
+  "zh": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 Nebius Group N.V. 无关联。"
+ },
+ "quarters": [
+  [
+   "Q1 2024",
+   "Mar 2024",
+   11.3,
+   22.48,
+   -715.49,
+   0.36
+  ],
+  [
+   "Q2 2024",
+   "Jun 2024",
+   12.08,
+   72.68,
+   -793.05,
+   -1.89
+  ],
+  [
+   "Q3 2024",
+   "Sep 2024",
+   32.1,
+   69.16,
+   -251.09,
+   -0.45
+  ],
+  [
+   "Q4 2024",
+   "Dec 2024",
+   35.2,
+   40.06,
+   -387.78,
+   -0.63
+  ],
+  [
+   "Q1 2025",
+   "Mar 2025",
+   50.9,
+   51.47,
+   -236.35,
+   -0.48
+  ],
+  [
+   "Q2 2025",
+   "Jun 2025",
+   105.1,
+   71.36,
+   -105.8,
+   2.38
+  ],
+  [
+   "Q3 2025",
+   "Sep 2025",
+   146.1,
+   70.64,
+   -89.12,
+   -0.5
+  ],
+  [
+   "Q4 2025",
+   "Dec 2025",
+   227.7,
+   69.92,
+   -109.79,
+   -1.11
+  ],
+  [
+   "Q1 2026",
+   "Mar 2026",
+   399.0,
+   73.98,
+   -32.08,
+   2.11
+  ],
+  [
+   "Q2 2026",
+   "Jun 2026",
+   582.3,
+   77.06,
+   -30.21,
+   -0.68
+  ]
+ ],
+ "guide": [
+  "Q3 2026e",
+  880,
+  "Sep 2026 · my estimate from the FY guide",
+  "2026年9月 · 按全年指引推算（我的估计）"
+ ],
+ "fcf": {
+  "sub": {
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 8 quarters from Q3 2024 to Q2 2026 (continuing operations). Shaded bars and italic rows are estimates.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2024 年第三季至 2026 年第二季共 8 个季度（持续经营业务）。浅色柱与斜体行为估算。"
+  },
+  "hist": [
+   [
+    "Q3 2024",
+    "Sep 2024",
+    -55.8,
+    172.1,
+    -227.9
+   ],
+   [
+    "Q4 2024",
+    "Dec 2024",
+    -74.6,
+    417.5,
+    -492.1
+   ],
+   [
+    "Q1 2025",
+    "Mar 2025",
+    -197.5,
+    543.9,
+    -741.4
+   ],
+   [
+    "Q2 2025",
+    "Jun 2025",
+    -171.6,
+    510.6,
+    -682.2
+   ],
+   [
+    "Q3 2025",
+    "Sep 2025",
+    -80.4,
+    955.5,
+    -1035.9
+   ],
+   [
+    "Q4 2025",
+    "Dec 2025",
+    834.3,
+    2056.0,
+    -1221.7
+   ],
+   [
+    "Q1 2026",
+    "Mar 2026",
+    2258.0,
+    2472.9,
+    -214.9
+   ],
+   [
+    "Q2 2026",
+    "Jun 2026",
+    2246.1,
+    5657.4,
+    -3411.3
+   ]
+  ],
+  "est": [
+   [
+    "Q3 2026",
+    "Sep 2026",
+    2500,
+    6500,
+    -4000
+   ],
+   [
+    "Q4 2026",
+    "Dec 2026",
+    2500,
+    7500,
+    -5000
+   ],
+   [
+    "Q1 2027",
+    "Mar 2027",
+    1500,
+    6000,
+    -4500
+   ],
+   [
+    "Q2 2027",
+    "Jun 2027",
+    1500,
+    6000,
+    -4500
+   ]
+  ],
+  "cash": {
+   "k": {
+    "en": "Cash & equivalents",
+    "zh": "现金及等价物"
+   },
+   "v": "$8.0B",
+   "s": {
+    "en": "Jun 30, 2026 · debt $10.2B",
+    "zh": "2026年6月30日 · 债务 102 亿"
+   }
+  },
+  "read": [
+   {
+    "en": "Nebius burns cash on purpose: it is building data centers ahead of revenue. Free cash flow has been negative every quarter, and the gap widened to −$3.4B in Q2 2026 as capex jumped to $5.7B. Operating cash flow turned strongly positive from late 2025, but mostly because customers paid in advance.",
+    "zh": "Nebius 是主动烧钱：在收入到来之前先建数据中心。自由现金流每季皆为负，2026 年第二季资本开支跃升至 57 亿美元，缺口扩大到 −34 亿。经营现金流自 2025 年底起大幅转正，但主要是客户预付所致。"
+   },
+   {
+    "en": "My estimate takes the $20–25B 2026 capex plan (about $14B left for H2) and $9B+ of prepayments, giving roughly −$18B of free cash flow over the next four quarters. 2027 capex is my assumption, since no plan has been given. That gap has to be filled with new debt, convertibles or shares.",
+    "zh": "我的估计采用 2026 年 200–250 亿美元资本开支计划（下半年约剩 140 亿）及逾 90 亿美元预付款，得出未来四季自由现金流约 −180 亿。2027 年资本开支为我的假设，公司尚未公布计划。这一缺口需要新债、可转债或增发来填补。"
+   }
+  ],
+  "out": [
+   {
+    "h": {
+     "en": "GPUs and data centers",
+     "zh": "GPU 与数据中心"
+    },
+    "p": {
+     "en": "$20–25B of capex planned for 2026, mostly NVIDIA systems and new sites in the US and Europe.",
+     "zh": "2026 年计划资本开支 200–250 亿美元，主要用于英伟达系统及美欧新站点。"
+    }
+   },
+   {
+    "h": {
+     "en": "Power",
+     "zh": "电力"
+    },
+    "p": {
+     "en": "Target of 800 MW to 1 GW connected by year-end, with 5 GW contracted over time.",
+     "zh": "目标年底接入 800 MW 至 1 GW，长期签约电力 5 GW。"
+    }
+   },
+   {
+    "h": {
+     "en": "Acquisitions",
+     "zh": "收购"
+    },
+    "p": {
+     "en": "Small software buys such as Inferize (Oct 1) to improve inference efficiency.",
+     "zh": "小型软件收购，如 Inferize（10月1日），以提升推理效率。"
+    }
+   }
+  ],
+  "in": [
+   {
+    "h": {
+     "en": "Customer prepayments",
+     "zh": "客户预付款"
+    },
+    "p": {
+     "en": "Over $9B expected in 2026, covering 50–60% of capex on new deals.",
+     "zh": "预计 2026 年逾 90 亿美元，覆盖新合约 50–60% 的资本开支。"
+    }
+   },
+   {
+    "h": {
+     "en": "Debt and convertibles",
+     "zh": "债务与可转债"
+    },
+    "p": {
+     "en": "Debt rose from $1.2B to $10.2B in a year, including a $5.75B convertible.",
+     "zh": "债务一年内从 12 亿升至 102 亿美元，包括 57.5 亿美元可转债。"
+    }
+   },
+   {
+    "h": {
+     "en": "Rising prices",
+     "zh": "价格上调"
+    },
+    "p": {
+     "en": "On-demand GPU prices were raised 17–21% on Oct 1, 2026.",
+     "zh": "2026年10月1日按需 GPU 价格上调 17–21%。"
+    }
+   }
+  ],
+  "bridge": [
+   [
+    {
+     "en": "Cash, Jun 2026",
+     "zh": "2026年6月现金"
+    },
+    8042
+   ],
+   [
+    {
+     "en": "Free cash flow, 4 quarters (est.)",
+     "zh": "4季自由现金流（估）"
+    },
+    -18000
+   ]
+  ],
+  "bridgeEnd": {
+   "en": "Before new financing, Jun 2027 (est.)",
+   "zh": "2027年6月，未计新融资（估）"
+  },
+  "bridgeNote": {
+   "en": "A negative balance means Nebius would need roughly $10B or more of new funding within a year to keep building at this pace.",
+   "zh": "余额为负意味着 Nebius 若要维持当前扩张速度，一年内需新增约 100 亿美元或以上的资金。"
+  },
+  "extraNote": {
+   "en": "Capex is purchases of property and equipment. Some GPU capacity is leased, which keeps it out of capex.",
+   "zh": "资本开支为物业及设备购置额。部分 GPU 产能以租赁方式取得，不计入资本开支。"
+  },
+  "src": [
+   [
+    "Quarterly cash flow statement (Stock Analysis)",
+    "https://stockanalysis.com/stocks/nbis/financials/cash-flow-statement/?p=quarterly"
+   ],
+   [
+    "Q2 2026 capex and cash flow (Tradune)",
+    "https://tradune.com/earnings/nebius-q2-2026"
+   ],
+   [
+    "2026 guidance (call transcript)",
+    "https://www.fool.com/earnings/call-transcripts/2026/08/19/nebius-nbis-q2-2026-earnings-call-transcript/"
+   ]
+  ]
+ }
+}

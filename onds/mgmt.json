@@ -1,0 +1,63 @@
+{
+ "ticker": "ONDS",
+ "asof": "2026-10-11",
+ "quarter": {
+  "en": "Q2 2026 (June quarter)",
+  "zh": "2026 年第二季（6 月季度）"
+ },
+ "reported": "2026-08-13",
+ "timing": "bmo",
+ "pre_close": 9.77,
+ "react": {
+  "date": "2026-08-13",
+  "close": 8.91,
+  "pct": -8.8
+ },
+ "since": {
+  "date": "2026-10-09",
+  "close": 6.73,
+  "pct": -31.1
+ },
+ "review": {
+  "en": [
+   "Revenue reached a record $83.8M, up 67% from Q1 and 13 times a year ago, beating the ~$69M consensus by about 25%; same-portfolio growth was 85%. But the adjusted loss of $0.19 a share was wider than the ~$0.10 expected, and the operating loss was $163M including $106M of non-cash charges. CEO Eric Brock raised the 2026 revenue target to $525–550M and guided Q3 to $140–155M, with company-wide adjusted EBITDA profit targeted for Q4 2027.",
+   "Shares fell 9% on the day as the wider loss and acquisition-driven growth outweighed the revenue beat. The slide continued through August and September as Ondas announced more acquisitions paid partly in stock. Even $270M of new orders since June has not turned the trend; the stock is about 31% below its pre-report close."
+  ],
+  "zh": [
+   "营收创纪录达 8380 万美元，环比增长 67%，为一年前的 13 倍，较约 6900 万的预期高约 25%；同口径增长 85%。但调整后每股亏损 0.19 美元，大于约 0.10 的预期；营业亏损 1.63 亿美元，其中 1.06 亿为非现金费用。CEO 埃里克·布罗克将 2026 年营收目标上调至 5.25–5.5 亿美元，Q3 指引 1.4–1.55 亿，公司整体调整后 EBITDA 盈利目标定在 2027 年 Q4。",
+   "亏损扩大与收购驱动的增长盖过了营收超预期，股价当天下跌 9%。随着 Ondas 宣布更多部分以股票支付的收购，跌势延续至8、9月。即使6月以来获得 2.7 亿美元新订单，也未能扭转趋势；股价较财报前收盘价低约 31%。"
+  ]
+ },
+ "ceo": {
+  "name": {
+   "en": "Eric Brock",
+   "zh": "埃里克·布罗克"
+  },
+  "since": "2018",
+  "bio": {
+   "en": "Chairman and CEO since 2018, with more than 20 years in global banking and investing before that. He has led Ondas's shift from industrial radios into drones and defense through a series of acquisitions, including Airobotics, Iron Drone and DZYNE.",
+   "zh": "2018 年起任董事长兼 CEO，此前在全球银行与投资领域工作逾 20 年。他通过一系列收购（包括 Airobotics、Iron Drone 与 DZYNE），带领 Ondas 从工业无线电转向无人机与国防。"
+  }
+ },
+ "cfo": {
+  "name": {
+   "en": "Neil Laird",
+   "zh": "尼尔·莱尔德"
+  },
+  "since": "2024",
+  "bio": {
+   "en": "CFO and treasurer since June 2024, a veteran finance executive. He has overseen the equity raises that built Ondas's cash pile to about $1.4B.",
+   "zh": "2024 年6月起任 CFO 兼司库，为资深财务高管。主导多轮股权融资，令 Ondas 现金增至约 14 亿美元。"
+  }
+ },
+ "sources": [
+  {
+   "t": "Q2 2026 results",
+   "u": "https://ir.ondas.com/press-releases/detail/326/ondas-posts-record-q2-2026-revenue-of-83-8-million-on"
+  },
+  {
+   "t": "Management team",
+   "u": "https://ir.ondas.com/management-team"
+  }
+ ]
+}

@@ -1,0 +1,617 @@
+{
+ "dir": "lmnd",
+ "ticker": "LMND",
+ "exchange": "NYSE",
+ "name": "Lemonade",
+ "shares": 77400000.0,
+ "beta": "1.87",
+ "snapshot": {
+  "price": "$46.46",
+  "date": "Oct 9, 2026",
+  "mcap": "$3.6B",
+  "range": "$44–97"
+ },
+ "eyebrow": {
+  "en": "Lemonade, Inc. · Common stock · New York",
+  "zh": "Lemonade · 普通股 · 纽约"
+ },
+ "title": {
+  "en": "Insurance run by bots, <em>growing faster every quarter</em>.",
+  "zh": "由机器人运营的保险公司，<em>增长一季比一季快</em>。"
+ },
+ "lede": {
+  "en": "Lemonade sells renters, home, pet, car and life insurance through an app, with AI handling much of the sales and claims work. In-force premium grew 32.5% to $1.43B, its 11th straight quarter of faster growth, and revenue jumped 79%. But marketing spend keeps losses going, and the stock has halved since January.",
+  "zh": "Lemonade 通过手机应用销售租客、房屋、宠物、汽车与人寿保险，大部分销售与理赔由 AI 处理。有效保费增长 32.5% 至 14.3 亿美元，连续 11 个季度加速，营收大增 79%。但营销开支令亏损延续，股价自1月以来已腰斩。"
+ },
+ "valuation": {
+  "k": {
+   "en": "Price / sales",
+   "zh": "市销率"
+  },
+  "v": "~3×",
+  "s": {
+   "en": "on $1.21–1.22B FY26 revenue guide · loss-making",
+   "zh": "按 FY26 营收指引 12.1–12.2 亿 · 仍亏损"
+  }
+ },
+ "analysts": {
+  "k": {
+   "en": "FY26 guide",
+   "zh": "FY26 指引"
+  },
+  "v": "$1.21–1.22B",
+  "s": {
+   "en": "revenue · IFP +33% · positive adj. EBITDA in Q4",
+   "zh": "营收 · 有效保费 +33% · Q4 调整后 EBITDA 转正"
+  }
+ },
+ "earnings": {
+  "v": "Nov 4",
+  "s": {
+   "en": "Q3 2026 · before the open",
+   "zh": "2026年第三季 · 盘前"
+  }
+ },
+ "sub_price": {
+  "en": "Daily closes with the 50-day average. Lemonade peaked near $97 in January and fell about 24% the day after its July report, when higher growth spending overshadowed the numbers.",
+  "zh": "每日收盘价与50日均线。Lemonade 1月高点接近 97 美元，7月财报次日因增长开支上升盖过业绩而大跌约 24%。"
+ },
+ "sub_rev": {
+  "en": "Revenue in US$ millions. Insurers don't report a gross margin the usual way, so only operating margin is shown in the table. Revenue grew faster than premium in 2025–26 because Lemonade gave less of its premium to reinsurers. The last bar is my estimate from the company's ~69% growth guide.",
+  "zh": "营收单位为百万美元。保险公司不按一般方式披露毛利率，故表中只列营业利润率。2025–26 年营收增速高于保费，原因是分给再保险公司的保费比例降低。最后一根柱为我依公司约 69% 的增长指引推算。"
+ },
+ "rev_cells": [
+  {
+   "k": {
+    "en": "Q2 2026",
+    "zh": "2026 Q2"
+   },
+   "v": "$294M",
+   "s": {
+    "en": "+79% YoY",
+    "zh": "同比 +79%"
+   }
+  },
+  {
+   "k": {
+    "en": "In-force premium",
+    "zh": "有效保费"
+   },
+   "v": "$1.43B",
+   "s": {
+    "en": "+32.5% · 11th quarter of faster growth",
+    "zh": "+32.5% · 连续 11 季加速"
+   }
+  },
+  {
+   "k": {
+    "en": "Gross profit",
+    "zh": "毛利"
+   },
+   "v": "$113M",
+   "s": {
+    "en": "+76% YoY · company measure",
+    "zh": "同比 +76% · 公司口径"
+   }
+  },
+  {
+   "k": {
+    "en": "Loss ratio",
+    "zh": "赔付率"
+   },
+   "v": "~60%",
+   "s": {
+    "en": "gross, Q2 2026",
+    "zh": "毛赔付率，2026 Q2"
+   }
+  },
+  {
+   "k": {
+    "en": "Adj. EBITDA",
+    "zh": "调整后 EBITDA"
+   },
+   "v": "−$19M",
+   "s": {
+    "en": "loss 54% smaller · positive guided for Q4",
+    "zh": "亏损收窄 54% · Q4 指引转正"
+   }
+  },
+  {
+   "k": {
+    "en": "Cash & investments",
+    "zh": "现金及投资"
+   },
+   "v": "$560M",
+   "s": {
+    "en": "Jun 2026 · short-term",
+    "zh": "2026年6月 · 短期"
+   }
+  }
+ ],
+ "watch": [
+  {
+   "kind": "plus",
+   "h": {
+    "en": "Growth keeps accelerating",
+    "zh": "增长持续加速"
+   },
+   "p": {
+    "en": "In-force premium growth sped up for 11 quarters in a row, and management guides 33% for Q3 and the full year. Car insurance is expanding to most US drivers by the end of 2027.",
+    "zh": "有效保费增速已连续 11 季加快，管理层指引 Q3 及全年 33%。车险将在 2027 年底前覆盖大部分美国司机。"
+   }
+  },
+  {
+   "kind": "plus",
+   "h": {
+    "en": "Better underwriting",
+    "zh": "承保改善"
+   },
+   "p": {
+    "en": "The gross loss ratio has tightened to about 60%, and Lemonade is keeping more premium as reinsurance costs fall.",
+    "zh": "毛赔付率已收窄至约 60%，随再保险成本下降，Lemonade 保留更多保费。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "First profitable quarter",
+    "zh": "首个盈利季度"
+   },
+   "p": {
+    "en": "Management guides about $8M of positive adjusted EBITDA in Q4 2026 and a positive full year in 2027. Missing that would hurt credibility.",
+    "zh": "管理层指引 2026 年 Q4 调整后 EBITDA 约 800 万美元，2027 年全年转正。若未达标将损害信誉。"
+   }
+  },
+  {
+   "kind": "risk",
+   "h": {
+    "en": "Growth spending",
+    "zh": "增长开支"
+   },
+   "p": {
+    "en": "Marketing costs rose faster than expected in Q2 and the stock fell 24% in a day. Management says premium growth should outpace growth spend from 2027.",
+    "zh": "Q2 营销成本增长快于预期，股价单日下跌 24%。管理层称自 2027 年起保费增速将超过增长开支。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "CFO change and Investor Day",
+    "zh": "CFO 交接与投资者日"
+   },
+   "p": {
+    "en": "CFO Tim Bixby moves to the board on Jan 1, 2027. An Investor Day on Nov 17 could reset long-term targets.",
+    "zh": "CFO Tim Bixby 将于 2027年1月1日转任董事。11月17日的投资者日可能更新长期目标。"
+   }
+  },
+  {
+   "kind": "risk",
+   "h": {
+    "en": "Catastrophes and still no profit",
+    "zh": "巨灾风险与尚未盈利"
+   },
+   "p": {
+    "en": "Storms and wildfires can swing the loss ratio quickly, and Lemonade has never had a profitable year. Analysts rate it Hold on average.",
+    "zh": "风暴与山火会令赔付率大幅波动，而 Lemonade 从未实现全年盈利。分析师平均评级为持有。"
+   }
+  }
+ ],
+ "calendar": [
+  {
+   "date": "Nov 4, 2026",
+   "h": {
+    "en": "Q3 2026 earnings",
+    "zh": "2026年第三季财报"
+   },
+   "p": {
+    "en": "Guide: about 69% revenue growth and 33% in-force premium growth.",
+    "zh": "指引：营收增长约 69%，有效保费增长 33%。"
+   }
+  },
+  {
+   "date": "Nov 17, 2026",
+   "h": {
+    "en": "Investor Day",
+    "zh": "投资者日"
+   },
+   "p": {
+    "en": "Likely update on long-term growth and profit targets.",
+    "zh": "料将更新长期增长与盈利目标。"
+   }
+  },
+  {
+   "date": "Jan 1, 2027",
+   "h": {
+    "en": "New CFO",
+    "zh": "新任 CFO"
+   },
+   "p": {
+    "en": "Tim Bixby moves from CFO to the board.",
+    "zh": "Tim Bixby 由 CFO 转任董事。"
+   }
+  }
+ ],
+ "sources": [
+  [
+   "Q2 2026 call highlights (MarketBeat)",
+   "https://marketbeat.com/instant-alerts/lemonade-q2-earnings-call-highlights-2026-07-29"
+  ],
+  [
+   "Q2 2026 earnings call transcript",
+   "https://fool.com/earnings/call-transcripts/2026/08/07/lemonade-lmnd-q2-2026-earnings-call-transcript"
+  ],
+  [
+   "Why the stock fell in July (Motley Fool)",
+   "https://fool.com/investing/2026/08/04/why-lemonade-stock-dropped-26-in-july"
+  ],
+  [
+   "Loss ratio and valuation (AInvest)",
+   "https://ainvest.com/news/lemonade-60-loss-ratio-hidden-7-point-ingredient-stock-high-growth-bet-cheap-2609"
+  ],
+  [
+   "CFO transition 8-K",
+   "https://sec.gov/Archives/edgar/data/1691421/000169142126000050/lmnd-20260727.htm"
+  ],
+  [
+   "Quarterly income statement (Stock Analysis)",
+   "https://stockanalysis.com/stocks/lmnd/financials/?p=quarterly"
+  ],
+  [
+   "Price, market cap and beta: Yahoo Finance, as of Oct 9, 2026",
+   "https://finance.yahoo.com/quote/LMND"
+  ]
+ ],
+ "foot": {
+  "en": "Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with Lemonade, Inc.",
+  "zh": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 Lemonade, Inc. 无关联。"
+ },
+ "quarters": [
+  [
+   "Q3 2023",
+   "Sep 2023",
+   115.2,
+   null,
+   -45.31,
+   -0.88
+  ],
+  [
+   "Q4 2023",
+   "Dec 2023",
+   114.8,
+   null,
+   -34.76,
+   -0.61
+  ],
+  [
+   "Q1 2024",
+   "Mar 2024",
+   119.1,
+   null,
+   -37.45,
+   -0.67
+  ],
+  [
+   "Q2 2024",
+   "Jun 2024",
+   122.0,
+   null,
+   -44.02,
+   -0.81
+  ],
+  [
+   "Q3 2024",
+   "Sep 2024",
+   136.6,
+   null,
+   -46.85,
+   -0.95
+  ],
+  [
+   "Q4 2024",
+   "Dec 2024",
+   148.8,
+   null,
+   -23.52,
+   -0.42
+  ],
+  [
+   "Q1 2025",
+   "Mar 2025",
+   151.2,
+   null,
+   -38.43,
+   -0.86
+  ],
+  [
+   "Q2 2025",
+   "Jun 2025",
+   164.1,
+   null,
+   -23.52,
+   -0.6
+  ],
+  [
+   "Q3 2025",
+   "Sep 2025",
+   194.5,
+   null,
+   -16.3,
+   -0.51
+  ],
+  [
+   "Q4 2025",
+   "Dec 2025",
+   228.1,
+   null,
+   -3.64,
+   -0.29
+  ],
+  [
+   "Q1 2026",
+   "Mar 2026",
+   258.0,
+   null,
+   -11.01,
+   -0.47
+  ],
+  [
+   "Q2 2026",
+   "Jun 2026",
+   294.4,
+   null,
+   -11.82,
+   -0.56
+  ]
+ ],
+ "guide": [
+  "Q3 2026e",
+  329,
+  "Sep 2026 · ~69% growth guide",
+  "2026年9月 · 约 69% 增长指引"
+ ],
+ "fcf": {
+  "sub": {
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 12 quarters from Q3 2023 to Q2 2026. Shaded bars and italic rows are estimates.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2023 年第三季至 2026 年第二季共 12 个季度。浅色柱与斜体行为估算。"
+  },
+  "hist": [
+   [
+    "Q3 2023",
+    "Sep 2023",
+    -6.3,
+    2.2,
+    -8.5
+   ],
+   [
+    "Q4 2023",
+    "Dec 2023",
+    -16.1,
+    2.4,
+    -18.5
+   ],
+   [
+    "Q1 2024",
+    "Mar 2024",
+    -29.8,
+    2.5,
+    -32.3
+   ],
+   [
+    "Q2 2024",
+    "Jun 2024",
+    -11.7,
+    1.5,
+    -13.2
+   ],
+   [
+    "Q3 2024",
+    "Sep 2024",
+    16.3,
+    2.2,
+    14.1
+   ],
+   [
+    "Q4 2024",
+    "Dec 2024",
+    13.8,
+    3.2,
+    10.6
+   ],
+   [
+    "Q1 2025",
+    "Mar 2025",
+    -47.2,
+    2.3,
+    -49.5
+   ],
+   [
+    "Q2 2025",
+    "Jun 2025",
+    5.5,
+    2.1,
+    3.4
+   ],
+   [
+    "Q3 2025",
+    "Sep 2025",
+    4.5,
+    1.9,
+    2.6
+   ],
+   [
+    "Q4 2025",
+    "Dec 2025",
+    20.7,
+    3.1,
+    17.6
+   ],
+   [
+    "Q1 2026",
+    "Mar 2026",
+    -0.6,
+    3.5,
+    -4.1
+   ],
+   [
+    "Q2 2026",
+    "Jun 2026",
+    -3.4,
+    4.6,
+    -8.0
+   ]
+  ],
+  "est": [
+   [
+    "Q3 2026",
+    "Sep 2026",
+    0,
+    5,
+    -5
+   ],
+   [
+    "Q4 2026",
+    "Dec 2026",
+    20,
+    5,
+    15
+   ],
+   [
+    "Q1 2027",
+    "Mar 2027",
+    -15,
+    5,
+    -20
+   ],
+   [
+    "Q2 2027",
+    "Jun 2027",
+    10,
+    5,
+    5
+   ]
+  ],
+  "cash": {
+   "k": {
+    "en": "Cash & short-term investments",
+    "zh": "现金及短期投资"
+   },
+   "v": "$560M",
+   "s": {
+    "en": "Jun 30, 2026",
+    "zh": "2026年6月30日"
+   }
+  },
+  "read": [
+   {
+    "en": "Lemonade's cash flow is close to break-even and seasonal. It burned about $50M in each Q1 of 2023–2025, when annual bonuses and reinsurance payments land, and has been roughly flat since. Insurers collect premiums before paying claims, so operating cash flow runs ahead of accounting profit.",
+    "zh": "Lemonade 现金流接近收支平衡，并有季节性。2023–2025 年每年第一季约烧掉 5000 万美元（年度奖金与再保险付款集中于此），之后大致持平。保险公司先收保费后付理赔，因此经营现金流领先于会计利润。"
+   },
+   {
+    "en": "My estimate assumes adjusted EBITDA turns positive in Q4 2026 as guided, with the usual weaker first quarter, which gives roughly break-even free cash flow over the next four quarters. The risk is a bad catastrophe season or another jump in growth spending.",
+    "zh": "我的估计假设调整后 EBITDA 如指引在 2026 年 Q4 转正，并沿袭第一季偏弱的规律，得出未来四季自由现金流大致收支平衡。风险在于巨灾季节或增长开支再度跃升。"
+   }
+  ],
+  "out": [
+   {
+    "h": {
+     "en": "Growth spending",
+     "zh": "增长开支"
+    },
+    "p": {
+     "en": "Advertising to win new customers is the biggest use of cash; it is expensed up front.",
+     "zh": "为获取新客户的广告是最大的现金用途，并在当期费用化。"
+    }
+   },
+   {
+    "h": {
+     "en": "Synthetic agents",
+     "zh": "合成代理"
+    },
+    "p": {
+     "en": "Lemonade finances part of its growth spend with partners and repays it from future premium.",
+     "zh": "部分增长开支由合作方融资，日后以保费偿还。"
+    }
+   },
+   {
+    "h": {
+     "en": "Claims",
+     "zh": "理赔"
+    },
+    "p": {
+     "en": "A gross loss ratio near 60% means most premium goes back out as claims.",
+     "zh": "毛赔付率约 60%，意味大部分保费以理赔形式支付。"
+    }
+   }
+  ],
+  "in": [
+   {
+    "h": {
+     "en": "Premium growth",
+     "zh": "保费增长"
+    },
+    "p": {
+     "en": "In-force premium of $1.43B, growing about 33% a year.",
+     "zh": "有效保费 14.3 亿美元，年增约 33%。"
+    }
+   },
+   {
+    "h": {
+     "en": "Less reinsurance",
+     "zh": "减少再保险分出"
+    },
+    "p": {
+     "en": "Ceding less premium to reinsurers lifts revenue and gross profit.",
+     "zh": "分给再保险公司的保费减少，提升营收与毛利。"
+    }
+   },
+   {
+    "h": {
+     "en": "Investment income",
+     "zh": "投资收益"
+    },
+    "p": {
+     "en": "Interest on the investment portfolio adds a small, steady inflow.",
+     "zh": "投资组合利息带来小而稳定的现金流入。"
+    }
+   }
+  ],
+  "bridge": [
+   [
+    {
+     "en": "Cash, Jun 2026",
+     "zh": "2026年6月现金"
+    },
+    560
+   ],
+   [
+    {
+     "en": "Free cash flow, 4 quarters (est.)",
+     "zh": "4季自由现金流（估）"
+    },
+    0
+   ]
+  ],
+  "bridgeEnd": {
+   "en": "Jun 2027 (est.)",
+   "zh": "2027年6月（估）"
+  },
+  "bridgeNote": {
+   "en": "Part of this cash must stay in Lemonade's insurance subsidiaries to meet capital rules, so not all of it is free to spend.",
+   "zh": "部分现金须留在保险子公司以满足资本要求，并非全部可自由动用。"
+  },
+  "extraNote": {
+   "en": "Cash shown is cash plus short-term investments; Lemonade's total investment portfolio is larger.",
+   "zh": "此处现金为现金加短期投资；Lemonade 的总投资组合更大。"
+  },
+  "src": [
+   [
+    "Quarterly cash flow statement (Stock Analysis)",
+    "https://stockanalysis.com/stocks/lmnd/financials/cash-flow-statement/?p=quarterly"
+   ],
+   [
+    "Q2 2026 guidance (call transcript)",
+    "https://fool.com/earnings/call-transcripts/2026/08/07/lemonade-lmnd-q2-2026-earnings-call-transcript"
+   ]
+  ]
+ }
+}

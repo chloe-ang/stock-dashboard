@@ -1,0 +1,66 @@
+{
+ "asof": "Oct 9, 2026",
+ "close": 6.73,
+ "bias": {
+  "en": "Downtrend · near the bottom of its range",
+  "zh": "下降趋势 · 接近区间底部"
+ },
+ "read": [
+  {
+   "en": "Ondas is trending down. Price is below every average: 5-day ($7.12), 10-day ($7.25), 30-day ($7.38), 100-day ($8.41) and 200-day ($9.41), and the longer ones are falling. MACD crossed below its signal on Oct 8, and RSI at 35 is close to oversold. Good news on orders has not lifted the stock: it fell 5% on Oct 7 despite $165M of new orders.",
+   "zh": "Ondas 呈下降趋势。股价低于所有均线：5 日（$7.12）、10 日（$7.25）、30 日（$7.38）、100 日（$8.41）及 200 日（$9.41），较长均线皆向下。MACD 于10月8日下穿信号线，RSI 35 接近超卖。订单利好未能推高股价：10月7日宣布 1.65 亿美元新订单当天仍跌 5%。"
+  },
+  {
+   "en": "Support is $6.64, the low of the last month, then $6.22, the July low. Below that, the November 2025 low near $5.25 is the last major floor. Resistance is $7.12–7.38 (the short averages), then $7.98, the early-October high. A move back above the 30-day would be the first sign the selling is done.",
+   "zh": "支撑为 $6.64（近一个月低点），其次为 $6.22（7月低点）。再往下，2025年11月约 $5.25 的低点是最后的主要底部。阻力为 $7.12–7.38（短期均线），然后是 $7.98（10月初高点）。重新站上 30 日均线将是抛售结束的首个信号。"
+  }
+ ],
+ "levels": {
+  "r": [
+   [
+    7.25,
+    {
+     "en": "5 and 10-day averages",
+     "zh": "5 与 10 日均线"
+    }
+   ],
+   [
+    7.38,
+    {
+     "en": "30-day average",
+     "zh": "30日均线"
+    }
+   ],
+   [
+    7.98,
+    {
+     "en": "Early-October high",
+     "zh": "10月初高点"
+    }
+   ]
+  ],
+  "s": [
+   [
+    6.64,
+    {
+     "en": "One-month low",
+     "zh": "一个月低点"
+    }
+   ],
+   [
+    6.22,
+    {
+     "en": "July low",
+     "zh": "7月低点"
+    }
+   ],
+   [
+    5.25,
+    {
+     "en": "November 2025 low",
+     "zh": "2025年11月低点"
+    }
+   ]
+  ]
+ }
+}

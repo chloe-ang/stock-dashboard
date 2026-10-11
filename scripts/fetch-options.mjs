@@ -19,7 +19,7 @@ const STOCKS = [
   ["arm", "ARM"], ["tesla", "TSLA"], ["sndk", "SNDK"], ["intc", "INTC"], ["spcx", "SPCX"], ["mu", "MU"],
   ["lite", "LITE"], ["cohr", "COHR"], ["googl", "GOOGL"], ["meta", "META"], ["nvda", "NVDA"], ["zs", "ZS"],
   ["be", "BE"], ["amd", "AMD"], ["amzn", "AMZN"], ["msft", "MSFT"],
-  ["skhy", "SKHY"], ["tsm", "TSM"], ["avgo", "AVGO"], ["pltr", "PLTR"], ];
+  ["skhy", "SKHY"], ["tsm", "TSM"], ["avgo", "AVGO"], ["pltr", "PLTR"], ["lmnd", "LMND"], ["stx", "STX"], ["nbis", "NBIS"], ["onds", "ONDS"], ];
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 const MAX_EXP = 18, MAX_DAYS = 400, LO = 0.6, HI = 1.6;
 const summary = (s) => { if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, s + "\n"); };

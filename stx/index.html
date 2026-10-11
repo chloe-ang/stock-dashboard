@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Seagate Technology STX Dashboard</title>
+<meta name="description" content="Seagate Technology (NASDAQ: STX) investor dashboard: price, quarterly revenue and margins, free cash flow, watch list, news and calendar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="../assets/stock.css?v=2">
+<style>.chart.rev{height:320px} tr.guide td{color:var(--muted);font-style:italic}</style>
+<link rel="stylesheet" href="../assets/theme.css?v=1">
+</head>
+<body>
+<header class="bar"><div class="bar-in">
+  <span class="tick">NASDAQ: STX</span>
+  <span class="bar-px" id="barPx">$783.00</span>
+  <span class="chg" id="barChg"></span>
+  <span class="live" id="barLive"><i class="dot"></i><span id="barTime">snapshot</span></span>
+  <nav class="sec" aria-label="Sections">
+    <a href="../" data-i="n_home">All stocks</a>
+    <a href="#overview" data-i="n_over">Overview</a>
+    <a href="#price" data-i="n_price">Price</a>
+    <a href="#revenue" data-i="n_rev">Revenue</a>
+    <a href="#cashflow" data-i="n_fcf">Cash flow</a>
+    <a href="#watch" data-i="n_watch">Watch list</a>
+    <a href="#news" data-i="n_news">News</a>
+    <a href="#sources" data-i="n_src">Sources</a>
+  </nav>
+  <div class="tools">
+    <button class="tg" id="langBtn" type="button" aria-label="Switch language">中文</button>
+    <button class="tg" id="themeBtn" type="button" aria-label="Switch theme">◐ Auto</button>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <div class="hero" id="overview">
+    <div>
+      <div data-i="eyebrow" class="eyebrow">Seagate Technology Holdings plc · Ordinary shares · Singapore / Dublin</div>
+      <h1 data-ih="title">AI needs somewhere to keep its data, and <em>Seagate is sold out</em>.</h1>
+      <p data-i="lede" class="lede">Hard drives still hold most of the world's cloud data, and AI has made them scarce. Seagate's revenue rose 48% last quarter to $3.6B at a record 52% gross margin, its new HAMR drives are ramping, and nearline capacity is largely allocated through 2027. The worry: rivals like Toshiba are now adding capacity.</p>
+    </div>
+    <div class="pxbox">
+      <div class="eyebrow" id="pxLabel">Last close · Oct 9, 2026</div>
+      <div class="pxbig" id="pxBig">$783.00</div>
+      <div class="chg" id="pxChg"></div>
+      <div class="pxnote" id="pxNote"></div>
+      <div id="tv" style="margin-top:12px"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div></div>
+    </div>
+  </div>
+
+  <div class="cells" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:8px">
+    <div class="cell"><div class="k"><span data-i="k_mcap">Market cap</span></div><div class="v" id="mcap">$178B</div><div class="s"><span data-i="s_mcap">at current price</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_52">52-week range</span></div><div class="v" id="r52">$212–1,094</div><div class="s"><span data-i="s_52">closing low / high</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_val">P/E</span></div><div class="v">~27×</div><div class="s"><span data-i="s_val">Sep-quarter guide EPS $7.30 × 4 · ~14× next-year consensus</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_ttm">Revenue TTM</span></div><div class="v" id="ttmV"></div><div class="s" id="ttmS"></div></div>
+    <div class="cell"><div class="k"><span data-i="k_an">Q1 FY27 guide</span></div><div class="v">$4.1B</div><div class="s"><span data-i="s_an">±$100M · EPS $7.30 · op. margin ~50%</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_er">Next earnings</span></div><div class="v">Oct 27</div><div class="s"><span data-i="s_er">Q1 FY27 · after the close</span></div></div>
+  </div>
+
+  <section id="price">
+    <h2><span data-i="h_price">Price, last 12 months</span></h2>
+    <p data-i="sub_price" class="sub">Daily closes with the 50-day average. Seagate more than tripled in a year, then fell about 28% from its June high as investors priced in more supply.</p>
+    <div class="grid">
+      <div class="panel">
+        <div class="range" role="group" aria-label="Range">
+          <button type="button" data-r="66" aria-pressed="false">3M</button>
+          <button type="button" data-r="128" aria-pressed="false">6M</button>
+          <button type="button" data-r="0" aria-pressed="true">1Y</button>
+        </div>
+        <div class="chart"><canvas id="cPrice" aria-label="STX daily close price chart"></canvas></div>
+      </div>
+      <div class="cells">
+        <div class="cell"><div class="k"><span data-i="k_hi">1Y closing high</span></div><div class="v" id="hiV">—</div><div class="s" id="hiS"></div></div>
+        <div class="cell"><div class="k"><span data-i="k_lo">1Y closing low</span></div><div class="v" id="loV">—</div><div class="s" id="loS"></div></div>
+        <div class="cell"><div class="k">SMA 50</div><div class="v" id="s50V">—</div><div class="s" id="s50S"></div></div>
+        <div class="cell"><div class="k">SMA 200</div><div class="v" id="s200V">—</div><div class="s" id="s200S"></div></div>
+        <div class="cell"><div class="k">RSI 14</div><div class="v" id="rsiV">—</div><div class="s" id="rsiS"></div></div>
+        <div class="cell"><div class="k"><span data-i="k_move">Avg daily move</span></div><div class="v" id="mvV">—</div><div class="s"><span data-i="s_move">last 20 sessions</span></div></div>
+        <div class="cell"><div class="k">Beta</div><div class="v">2.08</div><div class="s"><span data-i="s_beta">vs. S&P 500</span></div></div>
+        <div class="cell"><div class="k"><span data-i="k_dd">From peak</span></div><div class="v" id="ddv">—</div><div class="s" id="ddS"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technicals" aria-label="Technical analysis"></section>
+
+  <section id="options" aria-label="Options"></section>
+
+  <section id="revenue">
+    <h2><span data-i="h_rev">Revenue and margins, by quarter</span></h2>
+    <p data-i="sub_rev" class="sub">Revenue in US$ millions, with GAAP gross margin on the right axis. Seagate's fiscal year ends around July 1, so FQ1 is the September quarter. The last bar is company guidance at the midpoint.</p>
+    <div class="grid">
+      <div class="panel">
+        <div class="legend"><span><i class="sw" style="background:var(--accent)"></i><span data-i="l_rev">Revenue</span></span><span><i class="sw" style="background:var(--copper);height:3px;vertical-align:3px"></i><span data-i="l_gm">Gross margin (right axis)</span></span><span><i class="sw" style="background:var(--line)"></i><span data-i="l_g">Guidance</span></span></div>
+        <div class="chart rev"><canvas id="cRev" aria-label="Quarterly revenue and gross margin"></canvas></div>
+      </div>
+      <div class="cells"><div class="cell"><div class="k"><span data-i="kc0">Q4 FY26</span></div><div class="v">$3.63B</div><div class="s"><span data-i="sc0">+48% YoY · June quarter</span></div></div><div class="cell"><div class="k"><span data-i="kc1">Data center</span></div><div class="v">$2.9B</div><div class="s"><span data-i="sc1">+57% YoY · 195 exabytes shipped</span></div></div><div class="cell"><div class="k"><span data-i="kc2">Gross margin</span></div><div class="v">52.3%</div><div class="s"><span data-i="sc2">GAAP · 37.4% a year ago</span></div></div><div class="cell"><div class="k"><span data-i="kc3">FY26 revenue</span></div><div class="v">$12.2B</div><div class="s"><span data-i="sc3">+34% · EPS $13.90 GAAP</span></div></div><div class="cell"><div class="k"><span data-i="kc4">HAMR share</span></div><div class="v">~40%</div><div class="s"><span data-i="sc4">of nearline exabytes exiting FY26</span></div></div><div class="cell"><div class="k"><span data-i="kc5">Net debt</span></div><div class="v">$2.2B</div><div class="s"><span data-i="sc5">$3.9B debt, $1.7B cash · Jun 2026</span></div></div></div>
+    </div>
+    <div class="panel tbl" style="margin-top:16px">
+      <table>
+        <thead><tr><th><span data-i="t_q">Quarter</span></th><th><span data-i="t_end">Ended</span></th><th><span data-i="t_rev">Revenue, US$M</span></th><th><span data-i="t_yoy">YoY</span></th><th><span data-i="t_gm">Gross margin</span></th><th><span data-i="t_om">Op. margin</span></th><th><span data-i="t_eps">EPS (GAAP)</span></th></tr></thead>
+        <tbody id="qBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="cashflow" aria-label="Free cash flow"></section>
+
+  <section id="holders" aria-label="Top shareholders"></section>
+
+  <section id="analysts" aria-label="Analyst ratings"></section>
+
+  <section id="watch">
+    <h2><span data-i="h_watch">Watch list</span></h2>
+    <p data-i="sub_watch" class="sub">What moves the thesis, sorted by direction.</p>
+    <div class="wl"><div class="item"><span class="pill p-plus" data-i="pl_plus">Tailwind</span><div><h3 data-i="w0h">Sold out into 2027</h3><p data-i="w0p">Nearline drive capacity is reported to be almost fully allocated through calendar 2027, and long-term agreements now stretch into 2028, which supports pricing.</p></div></div><div class="item"><span class="pill p-plus" data-i="pl_plus">Tailwind</span><div><h3 data-i="w1h">HAMR margin lift</h3><p data-i="w1p">Mozaic HAMR drives store more per platter. The CFO said incremental gross margin is well above 60%, and half of HAMR exabytes should be on Mozaic 4 by the end of 2026.</p></div></div><div class="item"><span class="pill p-plus" data-i="pl_plus">Tailwind</span><div><h3 data-i="w2h">Cash for shareholders</h3><p data-i="w2p">Free cash flow reached $1.1B last quarter and $3.1B for FY26. Seagate repaid $1.4B of debt in the year and pays a dividend while buying back stock.</p></div></div><div class="item"><span class="pill p-risk" data-i="pl_risk">Risk</span><div><h3 data-i="w3h">Toshiba adds capacity</h3><p data-i="w3p">On Oct 2 a report that Toshiba will double its AI hard-drive capacity by fiscal 2027 knocked 10% off Seagate. More supply could end the shortage pricing sooner.</p></div></div><div class="item"><span class="pill p-watch" data-i="pl_watch">Watch</span><div><h3 data-i="w4h">TDK heads unit</h3><p data-i="w4p">Bloomberg reported on Oct 6 that Seagate and Toshiba are bidding for TDK's magnetic-heads business, worth up to several billion dollars. The stock fell 9% that day.</p></div></div><div class="item"><span class="pill p-risk" data-i="pl_risk">Risk</span><div><h3 data-i="w5h">A cyclical industry</h3><p data-i="w5p">Drive makers have swung from shortage to glut before: Seagate lost money in several quarters of FY23–24. A slowdown in cloud spending would hit pricing fast.</p></div></div></div>
+  </section>
+
+  <section id="news" data-src="../data/news.json" data-tickers="STX" aria-label="Latest news"></section>
+
+  <section id="calendar">
+    <h2><span data-i="h_cal">Calendar</span></h2>
+    <div class="cal"><div class="item"><div><div class="date">Oct 27, 2026</div><h3 data-i="c0h">Q1 FY27 earnings</h3><p data-i="c0p">Guide: $4.1B ±$100M revenue, ~50% operating margin, EPS $7.30. Watch whether capacity stays sold out.</p></div></div><div class="item"><div><div class="date">Late 2026</div><h3 data-i="c1h">Mozaic 4 ramp</h3><p data-i="c1p">Management targets half of HAMR exabytes on Mozaic 4 by the end of calendar 2026.</p></div></div><div class="item"><div><div class="date">Late Jan 2027</div><h3 data-i="c2h">Q2 FY27 earnings</h3><p data-i="c2p">Date not yet announced; December-quarter results usually come in late January.</p></div></div></div>
+  </section>
+
+  <section id="sources">
+    <h2><span data-i="h_src">Sources</span></h2>
+    <ol class="src"><li><a href="https://money.tmx.com/en/quote/STX:US/news/5694200159950462/Seagate_Technology_Reports_Fiscal_Fourth_Quarter_and_Fiscal_Year_2026_Financial_Results" target="_blank" rel="noopener">Q4 FY26 and fiscal 2026 results (press release)</a></li><li><a href="https://tikr.com/blog/seagate-technology-q4-earnings-13th-straight-quarter-of-margin-gains" target="_blank" rel="noopener">Q4 FY26 recap: guide, HAMR and margins (TIKR)</a></li><li><a href="https://finance.yahoo.com/technology/ai/articles/seagate-technology-q4-earnings-call-140000287.html" target="_blank" rel="noopener">Q4 FY26 call highlights (Yahoo Finance)</a></li><li><a href="https://wattsupnext.com/news/seagate-s-10-drop-came-from-a-toshiba-plan-that-s-years-away" target="_blank" rel="noopener">Toshiba capacity report and Oct 2 selloff</a></li><li><a href="https://financefeeds.com/seagate-stx-805-63-down-9-18-western-digital-wdc-411-04-down-6-93/" target="_blank" rel="noopener">TDK heads-unit bidding and Oct 6 drop</a></li><li><a href="https://stockanalysis.com/stocks/stx/financials/?p=quarterly" target="_blank" rel="noopener">Quarterly income statement (Stock Analysis)</a></li><li><a href="https://finance.yahoo.com/quote/STX" target="_blank" rel="noopener">Price, market cap and beta: Yahoo Finance, as of Oct 9, 2026</a></li></ol>
+  </section>
+
+  <footer><span id="footTime"></span> <span data-i="foot">Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with Seagate Technology Holdings plc.</span></footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const KEY = "stx", SHARES = 227400000.0, TV = "NASDAQ:STX";
+// [quarter, ended, revenue US$M, gross margin %, operating margin %, GAAP EPS]  oldest first
+const Q = [["Q1 FY23", "Sep 2022", 2035, 23.69, 5.7, 0.14], ["Q2 FY23", "Dec 2022", 1887, 15.1, -2.12, -0.16], ["Q3 FY23", "Mar 2023", 1860, 17.15, 0.27, -2.09], ["Q4 FY23", "Jun 2023", 1602, 23.16, 6.87, -0.45], ["Q1 FY24", "Sep 2023", 1454, 11.14, -7.84, -0.88], ["Q2 FY24", "Dec 2023", 1555, 23.28, 5.98, -0.09], ["Q3 FY24", "Mar 2024", 1655, 25.68, 8.76, 0.12], ["Q4 FY24", "Jun 2024", 1887, 31.8, 15.0, 2.38], ["Q1 FY25", "Sep 2024", 2168, 32.93, 18.63, 1.41], ["Q2 FY25", "Dec 2024", 2325, 34.92, 21.03, 1.55], ["Q3 FY25", "Mar 2025", 2160, 35.65, 20.88, 1.57], ["Q4 FY25", "Jun 2025", 2444, 36.99, 23.36, 2.24], ["Q1 FY26", "Sep 2025", 2629, 39.44, 26.89, 2.43], ["Q2 FY26", "Dec 2025", 2825, 41.63, 29.95, 2.6], ["Q3 FY26", "Mar 2026", 3112, 46.5, 35.67, 3.27], ["Q4 FY26", "Jun 2026", 3629, 52.3, 43.07, 5.58]];
+// guidance or consensus for the next quarter: [label, revenue US$M, note en, note zh] or null
+const G = ["Q1 FY27e", 4100, "Sep 2026 \u00b7 guidance midpoint", "2026\u5e749\u6708 \u00b7 \u6307\u5f15\u4e2d\u503c"];
+// optional fixed TTM revenue cell when quarters are not consecutive
+const TTM = null;
+let P = {d:[],c:[]};
+const T = {zh:{"n_home": "全部股票", "n_over": "概览", "n_price": "股价", "n_rev": "营收", "n_fcf": "现金流", "n_watch": "关注点", "n_news": "新闻", "n_src": "来源", "k_mcap": "市值", "s_mcap": "按当前股价", "k_52": "52周区间", "s_52": "收盘低 / 高", "k_ttm": "近12月营收", "k_er": "下次财报", "h_price": "近12个月股价", "k_hi": "一年收盘最高", "k_lo": "一年收盘最低", "k_move": "日均波幅", "s_move": "近20个交易日", "s_beta": "相对标普500", "k_dd": "距高点", "h_rev": "季度营收与利润率", "l_rev": "营收", "l_gm": "毛利率（右轴）", "l_g": "指引", "t_q": "季度", "t_end": "截至", "t_rev": "营收（百万美元）", "t_yoy": "同比", "t_gm": "毛利率", "t_om": "营业利润率", "t_eps": "每股收益（GAAP）", "h_watch": "关注点", "sub_watch": "影响投资逻辑的因素，按方向分类。", "pl_plus": "利好", "pl_watch": "留意", "pl_risk": "风险", "h_cal": "日程", "h_src": "来源", "kc0": "FY26 Q4", "sc0": "同比 +48% · 6月季度", "kc1": "数据中心", "sc1": "同比 +57% · 出货 195 EB", "kc2": "毛利率", "sc2": "GAAP · 一年前 37.4%", "kc3": "FY26 营收", "sc3": "+34% · GAAP 每股 $13.90", "kc4": "HAMR 占比", "sc4": "FY26 末近线出货 EB 占比", "kc5": "净债务", "sc5": "债务 39 亿、现金 17 亿 · 2026年6月", "w0h": "2027 年前已售罄", "w0p": "据报道，近线硬盘产能在 2027 年前几乎已全部分配，长期协议已延伸至 2028 年，支撑售价。", "w1h": "HAMR 推升利润率", "w1p": "Mozaic HAMR 硬盘单盘容量更高。CFO 表示增量毛利率远高于 60%，预计 2026 年底一半 HAMR 出货将采用 Mozaic 4。", "w2h": "回馈股东的现金", "w2p": "上季自由现金流 11 亿美元，FY26 合计 31 亿。全年偿债 14 亿美元，并在派息之外回购股票。", "w3h": "东芝扩产", "w3p": "10月2日有报道称东芝将在 2027 财年前把 AI 硬盘产能翻倍，希捷当天下跌 10%。供给增加可能让短缺溢价提前结束。", "w4h": "TDK 磁头业务", "w4p": "彭博 10月6日报道，希捷与东芝正竞购 TDK 磁头业务，交易额或达数十亿美元。希捷当天下跌 9%。", "w5h": "周期性行业", "w5p": "硬盘行业曾多次从短缺转为过剩：希捷在 FY23–24 有数个季度亏损。云端开支一旦放缓，价格会迅速受压。", "c0h": "FY27 第一季财报", "c0p": "指引：营收 41 亿 ±1 亿美元，营业利润率约 50%，每股 $7.30。关注产能是否仍售罄。", "c1h": "Mozaic 4 放量", "c1p": "管理层目标在 2026 年底前一半 HAMR 出货采用 Mozaic 4。", "c2h": "FY27 第二季财报", "c2p": "日期未公布；12月季度业绩通常于1月下旬发布。", "eyebrow": "希捷科技 · 普通股 · 新加坡 / 都柏林", "title": "AI 的数据总得有地方存，<em>希捷的硬盘已售罄</em>。", "lede": "全球云端数据大多仍存放在机械硬盘上，而 AI 让硬盘供不应求。希捷上季营收增长 48% 至 36 亿美元，毛利率创纪录达 52%，新一代 HAMR 硬盘正在放量，近线产能 2027 年前已大致分配完毕。隐忧：东芝等对手正在扩产。", "k_val": "市盈率", "s_val": "9月季度指引每股 $7.30 × 4 · 明年一致预期约 14 倍", "k_an": "FY27 Q1 指引", "s_an": "±1 亿 · 每股 $7.30 · 营业利润率约 50%", "s_er": "FY27 第一季 · 盘后", "sub_price": "每日收盘价与50日均线。希捷一年内涨逾三倍，随后因市场计入供给增加，较6月高点回落约 28%。", "sub_rev": "营收单位为百万美元，右轴为 GAAP 毛利率。希捷财年约在7月1日结束，财年第一季为9月季度。最后一根柱为公司指引中值。", "foot": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 Seagate Technology Holdings plc 无关联。"}};
+</script>
+<script src="../assets/stock-page.js?v=1"></script>
+<script src="fcf-data.js?v=1"></script>
+<script src="../assets/fcf.js?v=4"></script>
+<script src="../assets/news.js?v=2"></script>
+<script src="../assets/technicals.js?v=1"></script>
+<script src="../assets/holders.js?v=3"></script>
+<script src="../assets/options.js?v=1"></script>
+<script src="../assets/analysts.js?v=1"></script>
+<script src="../assets/mgmt.js?v=1"></script>
+</body>
+</html>

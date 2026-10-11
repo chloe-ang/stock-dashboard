@@ -1,0 +1,66 @@
+{
+ "asof": "Oct 9, 2026",
+ "close": 46.46,
+ "bias": {
+  "en": "Downtrend · basing between $43 and $51",
+  "zh": "下降趋势 · 在 $43–51 筑底"
+ },
+ "read": [
+  {
+   "en": "Lemonade is in a clear downtrend: price is below the 30-day ($48.4), 100-day ($55.4) and 200-day ($60.9) averages, and all three are falling. In the short term it is trying to base. It has held $43–44 since late September, sits right on the 5 and 10-day averages, and MACD crossed above its signal on Oct 2. RSI at 43 is neutral.",
+   "zh": "Lemonade 处于明显下降趋势：股价低于 30 日（$48.4）、100 日（$55.4）及 200 日（$60.9）均线，三者皆向下。短线正尝试筑底：9月底以来守住 $43–44，股价贴近 5 日与 10 日均线，MACD 于10月2日上穿信号线。RSI 43 中性。"
+  },
+  {
+   "en": "Support is $44.9, where it closed in late September, then $43.3, the September low and the bottom of the 52-week range. A close below that would set new lows. To turn the picture, it needs to clear $48.4 (30-day), then $50.6 (the recent high). The 100-day near $55 is the bigger hurdle. The Nov 4 report and Nov 17 Investor Day are the next catalysts.",
+   "zh": "支撑为 $44.9（9月下旬收盘区域），其次为 $43.3（9月低点，亦是52周区间底部）。若收盘跌破将创新低。要扭转走势，需先站上 $48.4（30日均线），再突破 $50.6（近期高点）。约 $55 的 100 日均线是更大障碍。11月4日财报与11月17日投资者日是下一催化剂。"
+  }
+ ],
+ "levels": {
+  "r": [
+   [
+    48.4,
+    {
+     "en": "30-day average",
+     "zh": "30日均线"
+    }
+   ],
+   [
+    50.6,
+    {
+     "en": "Recent high",
+     "zh": "近期高点"
+    }
+   ],
+   [
+    55.4,
+    {
+     "en": "100-day average",
+     "zh": "100日均线"
+    }
+   ]
+  ],
+  "s": [
+   [
+    44.9,
+    {
+     "en": "Late-September closes",
+     "zh": "9月下旬收盘区域"
+    }
+   ],
+   [
+    43.3,
+    {
+     "en": "September low, 52-week low",
+     "zh": "9月低点、52周低点"
+    }
+   ],
+   [
+    40.0,
+    {
+     "en": "Round number, no recent support below",
+     "zh": "整数关口，下方无近期支撑"
+    }
+   ]
+  ]
+ }
+}
