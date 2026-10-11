@@ -1,0 +1,32 @@
+name: Temporary research fetch
+on:
+  push:
+    branches: [main]
+    paths: ["research/request.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: research
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: SEC facts
+        run: python3 research/fetch.py $(cat research/request.txt)
+      - name: Price history
+        run: |
+          for t in $(cat research/request.txt); do
+            node scripts/fetch-quote.mjs $t research/px/$t 2y || true
+          done
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research
+          git commit -q -m "Research data for $(cat research/request.txt)" || echo nothing
+          git pull -q --rebase origin main && git push -q

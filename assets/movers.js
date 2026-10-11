@@ -25,7 +25,7 @@
   const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
   const st = document.createElement("style");
   st.textContent = `
-  :root{--ma5:#d97706;--ma10:#7c3aed;--ma30:#0d9488;--ma100:#64748b;--sar:#0b6fb8}
+  :root{--ma5:#d97706;--ma10:#7c3aed;--ma30:#0d9488;--ma100:#64748b;--sar:#0f766e}
   @media (prefers-color-scheme: dark){:root{--ma5:#f5b041;--ma10:#a78bfa;--ma30:#2dd4bf;--ma100:#94a3b8;--sar:#4fa8e8}}
   .mv-h{font:600 11px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;display:flex;justify-content:space-between;gap:8px}
   .mv{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;min-width:0;margin-bottom:14px}

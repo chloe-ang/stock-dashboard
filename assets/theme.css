@@ -1,0 +1,62 @@
+/* Chloe's theme: loaded last on every page, so it overrides the shared look.
+   Warm paper + deep teal, editorial serif headings, rounded soft cards. */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+:root{
+  --bg:#f7f3ec; --panel:#fffdf9; --line:#e6ddd0; --ink:#1f1a14; --muted:#6f6457;
+  --accent:#0f766e; --accent-soft:#dcefeb; --copper:#c2410c; --copper-soft:#fbe7dc; --slate:#8a7f72;
+  --up:#15803d; --down:#be123c; --warn:#b45309; --sar:#0f766e;
+  --f-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --f-body:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:14px; --shadow:0 1px 2px rgba(60,40,10,.05),0 6px 20px -10px rgba(60,40,10,.18);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#14110e; --panel:#1d1915; --line:#342d25; --ink:#f3ece2; --muted:#b0a596;
+  --accent:#2dd4bf; --accent-soft:#12322e; --copper:#fb923c; --copper-soft:#3a2416; --slate:#a39889;
+  --up:#4ade80; --down:#fb7185; --warn:#fbbf24; --sar:#2dd4bf;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#14110e; --panel:#1d1915; --line:#342d25; --ink:#f3ece2; --muted:#b0a596;
+  --accent:#2dd4bf; --accent-soft:#12322e; --copper:#fb923c; --copper-soft:#3a2416; --slate:#a39889;
+  --up:#4ade80; --down:#fb7185; --warn:#fbbf24; --sar:#2dd4bf;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6); color-scheme:dark}
+
+body{background:var(--bg);font-family:var(--f-body)}
+h1,h2,h3{font-family:var(--f-display)!important;letter-spacing:-.015em}
+h1{font-weight:700}
+h1 em{font-style:italic;color:var(--accent)}
+.eyebrow{color:var(--accent);letter-spacing:.18em}
+
+/* ticker chips: outlined teal instead of solid black */
+.tick{background:var(--accent-soft)!important;color:var(--accent)!important;border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);border-radius:999px!important;padding:3px 10px!important}
+
+/* panels and cards: rounder, softer, lifted */
+.panel,.cell,a.card,.item{border-radius:var(--r)!important}
+.panel,a.card{box-shadow:var(--shadow)}
+button.tg{border-radius:999px!important}
+.pxbox{border-left:none!important;padding-left:0!important;background:var(--accent-soft);border-radius:var(--r);padding:16px 20px!important}
+section{border-top:1px dashed var(--line)!important}
+header.bar{border-bottom:2px solid var(--accent)!important}
+nav.sec a{border-radius:999px!important}
+
+/* ---- main page ---- */
+.home h1{font-size:clamp(34px,5.5vw,56px)}
+.home .lede{font-size:16px}
+.home a.card{border:1px solid var(--line);border-top:1px solid var(--line);border-left:5px solid var(--line);padding:18px 18px 16px 20px;transition:transform .15s,box-shadow .15s,border-color .15s}
+.home a.card:hover,.home a.card:focus-visible{transform:translateY(-2px);border-color:var(--accent)}
+.home a.card.t-bull{border-left-color:var(--up)}
+.home a.card.t-con{border-left-color:color-mix(in srgb,var(--up) 50%,var(--line))}
+.home a.card.t-neu{border-left-color:var(--slate)}
+.home a.card.t-cau{border-left-color:var(--down)}
+.home .rk{display:inline-block;padding:2px 9px;border-radius:999px;background:color-mix(in srgb,var(--muted) 12%,transparent);margin-bottom:10px}
+.home a.card.t-bull .rk{background:color-mix(in srgb,var(--up) 14%,transparent)}
+.home a.card.t-cau .rk{background:color-mix(in srgb,var(--down) 12%,transparent)}
+.home .go{font-weight:600}
+.cat{margin-top:36px}
+.cat:first-of-type{margin-top:20px}
+.cat-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.cat-h h3{font-size:22px;margin:0}
+.cat-h .cat-n{font:500 12px var(--f-mono);color:var(--muted)}
+.cat-h .cat-d{color:var(--muted);font-size:13.5px;flex-basis:100%}
+@media (prefers-reduced-motion:reduce){.home a.card{transition:none}}
