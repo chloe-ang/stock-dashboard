@@ -16,14 +16,6 @@
 body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--f-body);margin:0}
 .wrap{max-width:1180px;margin:0 auto;padding:48px 16px}
 .shell{display:block}
-.movers-in{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:32px}
-.movers-in aside{min-width:0}
-@media (max-width:760px){.movers-in{grid-template-columns:minmax(0,1fr)}}
-@media (min-width:1500px){
-  .shell{display:grid;grid-template-columns:350px minmax(0,1fr) 350px;gap:24px;max-width:1960px;margin:0 auto;padding:0 16px}
-  .shell>.wrap{max-width:none;margin:0;padding:48px 0;min-width:0}
-  .shell>aside{padding-top:48px;min-width:0}
-}
 .eyebrow{font:600 11px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 h1{font:700 clamp(30px,5vw,48px)/1.05 var(--f-display);margin:.25em 0 .4em}
 .lede{color:var(--muted);margin:0 0 28px;max-width:60ch}
@@ -52,18 +44,21 @@ a.card.t-bull .rk{color:var(--up)}a.card.t-cau .rk{color:var(--down)}
 .why{font-size:12.5px;line-height:1.45;margin:0 0 12px;color:var(--ink)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-<link rel="stylesheet" href="assets/theme.css?v=3">
+<link rel="stylesheet" href="assets/theme.css?v=4">
 </head>
 <body>
 <div class="shell">
-<aside id="moversL" aria-label="Top 5 gainers"></aside>
 <main class="wrap home">
   <div class="eyebrow">Investor dashboards · EN / 中文</div>
   <h1>Stock dashboards</h1>
-  <p class="lede">Price, technical analysis, revenue, cash flow, watch list, news and calendar for each stock, plus live charts of the latest session's five biggest gainers (left) and five biggest losers (right). Prices refresh about every 10 minutes during US market hours.</p>
+  <p class="lede">Price, technical analysis, revenue, cash flow, watch list, news and calendar for each stock, plus the next five earnings reports and live charts of the latest session's five biggest gainers and losers. Prices refresh about every 10 minutes during US market hours.</p>
   <section id="earn" aria-label="Upcoming earnings">
     <div class="earn-h"><h2>Upcoming earnings</h2><span class="earn-sub">next 5 reports · US Eastern time</span></div>
     <ol class="earn-list" id="earnList"></ol>
+  </section>
+  <section id="movers" aria-label="Top movers of the latest session">
+    <div id="moversL" class="mv-row"></div>
+    <div id="moversR" class="mv-row"></div>
   </section>
   <h2 class="rank-h">Most to least bullish</h2>
   <p class="sub">All 24 stocks ranked by Claude as of Oct 11, 2026, from most bullish to most bearish, weighing the latest results and guidance, estimate momentum, the price trend and analyst upside. A judgment call, not advice; it changes as the facts do.</p>
@@ -93,11 +88,9 @@ a.card.t-bull .rk{color:var(--up)}a.card.t-cau .rk{color:var(--down)}
     <a class="card t-cau" href="onds/" data-q="onds/data/quote.json"><span class="rk">#23 · Cautious</span><span class="tick">NASDAQ: ONDS</span><span class="sec s-energy">Defense &amp; drones</span><div class="name">Ondas</div><p class="desc">Defense drones, counter-drone systems and robots, built by acquisition.</p><p class="why">Revenue 13× and guide raised, but stock-funded deals, big losses and a falling chart.</p><span class="px">—</span><span class="chg"></span><div class="go">Open dashboard →</div></a>
     <a class="card t-cau" href="tesla/" data-q="tesla/data/quote.json"><span class="rk">#24 · Cautious</span><span class="tick">NASDAQ: TSLA</span><span class="sec s-energy">EVs &amp; autos</span><div class="name">Tesla</div><p class="desc">EVs, energy storage, and the robotaxi and AI bet.</p><p class="why">EPS miss, 1.4% operating margin and ~164× earnings; little target upside.</p><span class="px">—</span><span class="chg"></span><div class="go">Open dashboard →</div></a>
   </div>
-  <div class="movers-in" id="moversHere"></div>
   <section id="news" data-src="data/news.json" data-tickers="ARM,TSLA,SNDK,INTC,SPCX,MU,LITE,COHR,GOOGL,META,NVDA,ZS,BE,AMD,AMZN,MSFT,SKHY,TSM,AVGO,PLTR,LMND,STX,NBIS,ONDS" aria-label="Latest news"></section>
   <footer>For information only, not investment advice. Not affiliated with any company shown.</footer>
 </main>
-<aside id="moversR" aria-label="Top 5 losers"></aside>
 </div>
 <script>
 document.querySelectorAll("a.card").forEach(async a=>{
@@ -131,12 +124,6 @@ const EARN = [["TSM", "Taiwan Semiconductor", "2026-10-15", "bmo", 0, "tsm"], ["
 </script>
 <script src="assets/news.js?v=3"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
-<script>
-// Movers sit beside the main column on wide screens and under the stock cards otherwise.
-(function(){const L=document.getElementById("moversL"),R=document.getElementById("moversR"),shell=document.querySelector(".shell"),here=document.getElementById("moversHere"),main=shell.querySelector("main"),mq=matchMedia("(min-width:1500px)");
-function place(){if(mq.matches){shell.insertBefore(L,main);shell.appendChild(R);}else{here.appendChild(L);here.appendChild(R);}}
-place();mq.addEventListener("change",place);})();
-</script>
-<script src="assets/movers.js?v=4"></script>
+<script src="assets/movers.js?v=5"></script>
 </body>
 </html>

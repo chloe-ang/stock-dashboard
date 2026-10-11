@@ -60,7 +60,8 @@ nav.sec a{border-radius:999px!important}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .s-chips{--sc:#a78bfa}:root:not([data-theme="light"]) .s-mem{--sc:#60a5fa}:root:not([data-theme="light"]) .s-cloud{--sc:#22d3ee}:root:not([data-theme="light"]) .s-optic{--sc:#e879f9}:root:not([data-theme="light"]) .s-soft{--sc:#fbbf24}:root:not([data-theme="light"]) .s-energy{--sc:#a3e635}}
 :root[data-theme="dark"] .s-chips{--sc:#a78bfa}:root[data-theme="dark"] .s-mem{--sc:#60a5fa}:root[data-theme="dark"] .s-cloud{--sc:#22d3ee}:root[data-theme="dark"] .s-optic{--sc:#e879f9}:root[data-theme="dark"] .s-soft{--sc:#fbbf24}:root[data-theme="dark"] .s-energy{--sc:#a3e635}
 /* upcoming earnings strip */
-#earn{margin:4px 0 36px}
+#earn{margin:4px 0 36px;border-top:none!important}
+#movers{border-top:none!important}
 .earn-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:12px}
 .earn-h h2{margin:0}
 .earn-sub{font:500 12px var(--f-mono);color:var(--muted)}

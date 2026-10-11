@@ -1,6 +1,6 @@
 /* Top movers panel for the main page.
    Ranks every stock on the site by the size of its latest daily move (quote.json price vs previous close),
-   then draws the 5 biggest gainers (left, #moversL) and the 5 biggest losers (right, #moversR) of the latest session
+   then draws the 5 biggest gainers (#moversL) and the 5 biggest losers (#moversR) of the latest session, each as a horizontal row
    as interactive candlestick charts: SMA 5/10/30/100, Parabolic SAR and MACD (12, 26, 9).
    Uses TradingView Lightweight Charts (loaded by the page). Data: <dir>/data/quote.json and history.json,
    refreshed by the GitHub Action (every 10 minutes in US market hours, then the closing print), so the lists
@@ -28,26 +28,35 @@
   st.textContent = `
   :root{--ma5:#d97706;--ma10:#7c3aed;--ma30:#0d9488;--ma100:#64748b;--sar:#0f766e}
   @media (prefers-color-scheme: dark){:root{--ma5:#f5b041;--ma10:#a78bfa;--ma30:#2dd4bf;--ma100:#94a3b8;--sar:#4fa8e8}}
-  .mv-h{font:600 11px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;display:flex;justify-content:space-between;gap:8px}
-  .mv{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;min-width:0;margin-bottom:14px}
-  .mv-top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  #movers{margin:0 0 36px;display:grid;gap:28px}
+  .mv-hd{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .mv-hd h2{margin:0}
+  .mv-hd h2.up{color:var(--up)}.mv-hd h2.down{color:var(--down)}
+  .mv-sub{font:500 12px var(--f-mono);color:var(--muted)}
+  .mv-hd .mv-ctl{margin:0 0 0 auto}
+  .mv-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+  @media (max-width:1100px){.mv-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.mv-grid>.mv{flex:0 0 240px;scroll-snap-align:start}}
+  .mv{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--line);border-radius:var(--r,6px);box-shadow:var(--shadow,none);padding:12px 12px 8px;min-width:0}
+  .mv.is-up{border-top-color:var(--up)}.mv.is-down{border-top-color:var(--down)}
+  .mv-top{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
   .mv-top a{color:inherit;text-decoration:none}
   .mv-rank{font:600 11px var(--f-mono);color:var(--muted)}
-  .mv-name{font:600 14px var(--f-body);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .mv-px{font:600 15px var(--f-mono);font-variant-numeric:tabular-nums}
-  .mv-chg{font:600 12px var(--f-mono);padding:1px 6px;border-radius:3px}
+  .mv-name{display:block;font:600 14px var(--f-body);margin:8px 0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:inherit;text-decoration:none}
+  .mv-line{display:flex;align-items:baseline;justify-content:space-between;gap:6px}
+  .mv-px{font:600 16px var(--f-mono);font-variant-numeric:tabular-nums}
+  .mv-chg{font:600 12px var(--f-mono);padding:1px 7px;border-radius:999px}
   .mv-chg.up{color:var(--up);background:color-mix(in srgb,var(--up) 14%,transparent)}
   .mv-chg.down{color:var(--down);background:color-mix(in srgb,var(--down) 14%,transparent)}
-  .mv-ohlc{font:500 10.5px var(--f-mono);color:var(--muted);min-height:15px;margin:6px 0 2px;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .mv-main{height:210px}.mv-macd{height:80px;border-top:1px dashed var(--line)}
-  .mv-ctl{display:flex;gap:4px;flex-wrap:wrap;margin:8px 0 0}
-  .mv-ctl button{font:500 10.5px var(--f-mono);border:1px solid var(--line);background:transparent;color:var(--muted);padding:2px 6px;border-radius:3px;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+  .mv-ohlc{font:500 10px var(--f-mono);color:var(--muted);min-height:14px;margin:6px 0 2px;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mv-main{height:150px}.mv-macd{height:56px;border-top:1px dashed var(--line)}
+  .mv-ctl{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+  .mv-ctl button{font:500 10.5px var(--f-mono);border:1px solid var(--line);background:transparent;color:var(--muted);padding:2px 8px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
   .mv-ctl button[aria-pressed="true"]{color:var(--ink);border-color:var(--muted)}
   .mv-ctl button[aria-pressed="false"] i{opacity:.25}
   .mv-ctl i{display:inline-block;width:8px;height:8px;border-radius:2px}
   .mv-ctl button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
   .mv-ctl .rg[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-  .mv-sep{flex-basis:100%;height:0}
+  .mv-ctl .gap{width:8px}
   `;
   document.head.appendChild(st);
 
@@ -105,18 +114,21 @@
     const q0 = sets.gain[0] && sets.gain[0].q, M = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     const ds = q0 && (q0.date || (q0.time ? new Date(q0.time * 1000).toISOString().slice(0, 10) : ""));
     const asof = ds ? `${M[+ds.slice(5, 7) - 1]} ${+ds.slice(8, 10)}` : "";
-    SLOTS[0].innerHTML = `<div class="mv-h"><span class="up">Top 5 gainers</span><span>${asof ? "session " + asof : "latest session"}</span></div>`;
-    SLOTS[1].innerHTML = `<div class="mv-h"><span class="down">Top 5 losers</span><span>${asof ? "session " + asof : "latest session"}</span></div>`;
-    const top = [...sets.gain.map((s, i) => ({ s, slot: SLOTS[0], r: i + 1 })), ...sets.lose.map((s, i) => ({ s, slot: SLOTS[1], r: i + 1 }))];
+    const sess = asof ? "session " + asof : "latest session";
+    const ctl = `<div class="mv-ctl">${RANGES.map(([l, n]) => `<button type="button" class="rg" data-n="${n}" aria-pressed="${n === rangeN}">${l}</button>`).join("")}<span class="gap"></span>`
+      + `${IND.map(([id, l, v]) => `<button type="button" class="ind" data-id="${id}" aria-pressed="${on[id]}"><i style="background:var(${v})"></i>${l}</button>`).join("")}</div>`;
+    SLOTS[0].innerHTML = `<div class="mv-hd"><h2 class="up">Top 5 gainers</h2><span class="mv-sub">${sess}</span>${ctl}</div><div class="mv-grid"></div>`;
+    SLOTS[1].innerHTML = `<div class="mv-hd"><h2 class="down">Top 5 losers</h2><span class="mv-sub">${sess}</span></div><div class="mv-grid"></div>`;
+    const G = SLOTS.map((x) => x.querySelector(".mv-grid"));
+    const top = [...sets.gain.map((s, i) => ({ s, slot: G[0], r: i + 1 })), ...sets.lose.map((s, i) => ({ s, slot: G[1], r: i + 1 }))];
     for (let k = 0; k < top.length; k++) {
       const { s, slot, r } = top[k];
-      const el = document.createElement("div"); el.className = "mv";
-      const up = s.pct >= 0;
-      el.innerHTML = `<div class="mv-top"><span class="mv-rank">#${r}</span><a href="${s.dir}/"><span class="tick">${s.t}</span></a><a class="mv-name" href="${s.dir}/">${s.name}</a>
-        <span class="mv-px">$${fmt(s.q.price)}</span><span class="mv-chg ${up ? "up" : "down"}">${up ? "+" : "−"}${Math.abs(s.pct).toFixed(2)}%</span></div>
-        <div class="mv-ohlc"></div><div class="mv-main"></div><div class="mv-macd"></div>
-        <div class="mv-ctl">${RANGES.map(([l, n]) => `<button type="button" class="rg" data-n="${n}" aria-pressed="${n === rangeN}">${l}</button>`).join("")}<span class="mv-sep"></span>
-        ${IND.map(([id, l, v]) => `<button type="button" class="ind" data-id="${id}" aria-pressed="${on[id]}"><i style="background:var(${v})"></i>${l}</button>`).join("")}</div>`;
+      const el = document.createElement("div");
+      const up = s.pct >= 0; el.className = "mv " + (up ? "is-up" : "is-down");
+      el.innerHTML = `<div class="mv-top"><span class="mv-rank">#${r}</span><a href="${s.dir}/"><span class="tick">${s.t}</span></a></div>
+        <a class="mv-name" href="${s.dir}/">${s.name}</a>
+        <div class="mv-line"><span class="mv-px">$${fmt(s.q.price)}</span><span class="mv-chg ${up ? "up" : "down"}">${up ? "+" : "−"}${Math.abs(s.pct).toFixed(2)}%</span></div>
+        <div class="mv-ohlc"></div><div class="mv-main"></div><div class="mv-macd"></div>`;
       slot.appendChild(el);
       const h = await getJSON(`${s.dir}/data/history.json`);
       const card = { s, el, h };
@@ -170,7 +182,7 @@
     const showBar = (i) => {
       if (i == null || i < 0 || i >= n) i = n - 1;
       const chg = i ? (h.c[i] / h.c[i - 1] - 1) * 100 : 0;
-      ohlcEl.textContent = `${t[i]}  O ${fmt(o[i])}  H ${fmt(hi[i])}  L ${fmt(lo[i])}  C ${fmt(h.c[i])}  ${chg >= 0 ? "+" : "−"}${Math.abs(chg).toFixed(2)}%`;
+      ohlcEl.textContent = `${t[i].slice(5)}  H ${fmt(hi[i])}  L ${fmt(lo[i])}  C ${fmt(h.c[i])}`;
     };
     main.subscribeCrosshairMove((p) => { if (!p || !p.time) return showBar(null); showBar(t.indexOf(p.time)); });
     showBar(null);
@@ -178,7 +190,7 @@
   }
 
   function wire() {
-    document.querySelectorAll("#moversL .mv-ctl button, #moversR .mv-ctl button").forEach((b) => b.onclick = () => {
+    document.querySelectorAll("#movers .mv-ctl button").forEach((b) => b.onclick = () => {
       if (b.classList.contains("rg")) { rangeN = +b.dataset.n; document.querySelectorAll(".mv-ctl .rg").forEach((x) => x.setAttribute("aria-pressed", +x.dataset.n === rangeN)); }
       else { on[b.dataset.id] = !on[b.dataset.id]; document.querySelectorAll(`.mv-ctl .ind[data-id="${b.dataset.id}"]`).forEach((x) => x.setAttribute("aria-pressed", on[b.dataset.id])); }
       try { localStorage.setItem("movers-ind", JSON.stringify(on)); localStorage.setItem("movers-range", String(rangeN)); } catch (e) {}
