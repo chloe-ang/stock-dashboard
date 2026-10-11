@@ -17,13 +17,14 @@ jobs:
         with:
           node-version: 20
       - name: SEC facts
-        run: python3 research/fetch.py $(cat research/request.txt)
+        run: python3 research/fetch.py $(cat research/request.txt) > research/log-sec.txt 2>&1 || true
       - name: Price history
         run: |
           for t in $(cat research/request.txt); do
-            node scripts/fetch-quote.mjs $t research/px/$t 2y || true
+            mkdir -p research/px/$t; node scripts/fetch-quote.mjs $t research/px/$t 2y >> research/log-px.txt 2>&1 || true
           done
       - name: Commit results
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

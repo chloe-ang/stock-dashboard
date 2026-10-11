@@ -1,5 +1,5 @@
 # Temporary: pulls SEC XBRL facts for new tickers so their pages can be built. Removed after use.
-import json, sys, urllib.request, pathlib, time
+import json, sys, traceback, urllib.request, pathlib, time
 UA = "stock-dashboard research (github.com/chloe-ang/stock-dashboard)"
 OUT = pathlib.Path(__file__).parent
 TICKERS = sys.argv[1:]
@@ -15,10 +15,14 @@ KEEP = {"Revenues","RevenueFromContractWithCustomerExcludingAssessedTax","Revenu
 def get(u):
     req = urllib.request.Request(u, headers={"User-Agent": UA, "Accept-Encoding": "identity"})
     with urllib.request.urlopen(req, timeout=60) as r: return json.load(r)
-m = {v["ticker"]: v for v in get("https://www.sec.gov/files/company_tickers.json").values()}
-for t in TICKERS:
+print("UA", UA, flush=True)
+try:
+    m = {v["ticker"]: v for v in get("https://www.sec.gov/files/company_tickers.json").values()}
+except Exception:
+    traceback.print_exc(); m = {}
+def one(t):
     e = m.get(t)
-    if not e: print("no CIK", t); continue
+    if not e: print("no CIK", t); return
     cik = str(e["cik_str"]).zfill(10)
     f = get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"); time.sleep(0.5)
     out = {"ticker": t, "cik": cik, "name": f.get("entityName"), "facts": {}}
@@ -33,3 +37,7 @@ for t in TICKERS:
     except Exception as ex: print("subs", t, ex)
     (OUT / f"{t}.json").write_text(json.dumps(out))
     print(t, cik, out["name"], len(out["facts"]))
+
+for t in TICKERS:
+    try: one(t)
+    except Exception: traceback.print_exc()
